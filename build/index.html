@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Акселератор. Проект №2. Сайт  LifeTour - Организация походов в горы">
     <title>LifeTour. Организация походов в горы</title>
     <link rel="preload" href="fonts/montserratextrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -32,23 +32,23 @@
                 </button>
                 <ul class="header__nav-list">
                   <li class="header__nav-item">
-                   <a href="#tours" class="header__nav-link">Туры</a>
+                    <a href="#tours" class="header__nav-link">Туры</a>
                   </li>
                   <li class="header__nav-item">
                     <a href="#instructors" class="header__nav-link">Обучение</a>
-                   </li>
-                   <li class="header__nav-item">
+                  </li>
+                  <li class="header__nav-item">
                     <a href="#about" class="header__nav-link">О нас</a>
-                   </li>
-                   <li class="header__nav-item">
+                  </li>
+                  <li class="header__nav-item">
                     <a href="#reviews" class="header__nav-link">Отзывы</a>
-                   </li>
-                   <li class="header__nav-item">
+                  </li>
+                  <li class="header__nav-item">
                     <a href="#gallery" class="header__nav-link">Фото</a>
-                   </li>
-                   <li class="header__nav-item">
+                  </li>
+                  <li class="header__nav-item">
                     <a href="#contacts" class="header__nav-link">Контакты</a>
-                   </li>
+                  </li>
                 </ul>
               </nav>
               <div class="header__phone">
@@ -76,11 +76,14 @@
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Продолжительность.">
                             <use href="img/sprite.svg#moon"></use>
                           </svg>
-                          6 дней/5 ночей</span>
-                        <span><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сложность.">
-                          <use href="img/sprite.svg#level"></use>
-                        </svg>
-                        Высокая сложность</span>
+                          6 дней/5 ночей
+                        </span>
+                        <span>
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сложность.">
+                            <use href="img/sprite.svg#level"></use>
+                          </svg>
+                          Высокая сложность
+                        </span>
                       </div>
                     </li>
                     <li class="hero__item swiper-slide">
@@ -94,11 +97,13 @@
                         <span>
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Продолжительность.">
                           <use href="img/sprite.svg#moon"></use>
-                        </svg>9 дней/10 ночей</span>
+                        </svg>9 дней/10 ночей
+                        </span>
                         <span>
-                          <span><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сложность.">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сложность.">
                             <use href="img/sprite.svg#level"></use>
-                          </svg>Средняя сложность</span>
+                          </svg>Средняя сложность
+                        </span>
                       </div>
                     </li>
                     <li class="hero__item swiper-slide">
@@ -112,11 +117,13 @@
                         <span>
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Продолжительность.">
                             <use href="img/sprite.svg#moon"></use>
-                          </svg>8 дней/7 ночей</span>
+                          </svg>8 дней/7 ночей
+                        </span>
                         <span>
-                          <span><svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сложность.">
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сложность.">
                             <use href="img/sprite.svg#level"></use>
-                          </svg>Легкая сложность сложность</span>
+                          </svg>Легкая сложность сложность
+                        </span>
                       </div>
                     </li>
                   </ul>
@@ -128,59 +135,431 @@
         </div>
       </header>
       <main>
-        <section class="tours">
+        <section class="tours" id="tours">
           <div class="container">
             <div class="tours__wrapper">
-
+              <h2 class="tours__title">Ближайшие туры</h2>
+              <button class="tours__button tours__button--prev" aria-label="Назад.">
+                <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
+                  <use href="img/sprite.svg#left"></use>
+                </svg>
+              </button>
+              <button class="tours__button tours__button--prev" aria-label="Вперед.">
+                <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
+                  <use href="img/sprite.svg#right"></use>
+                </svg>
+              </button>
+              <div class="tours__swiper swiper">
+                <ul class="tours__list swiper-wrapper">
+                  <li class="tours__itme swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/caucasus-tablet@1x.webp, img/tours/caucasus-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/caucasus-mobile@1x.webp, img/tours/caucasus-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/tours/caucasus-desktop@1x.webp, img/tours/caucasus-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/caucasus-tablet@1x.jpg, img/tours/caucasus-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/caucasus-mobile@1x.jpg, img/tours/caucasus-mobile@2x.jpg 2x">
+                      <img src="img/tours/caucasus-desktop@1x.jpg" srcset="img/tours/caucasus-desktop@2x.jpg 2x" width="380" height="412" alt="Фото долины приэльбрусья.">
+                    </picture>
+                    <div class="tours__information">
+                      <div class="tours__duration">
+                        <p class="tours__location">
+                          <svg width="9" height="12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Пин.">
+                            <use href="img/sprite.svg#pin"></use>
+                          </svg>
+                          Кавказ</p>
+                        <p class="tours__days">
+                          <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Солнце.">
+                            <use href="img/sprite.svg#days"></use>
+                          </svg>
+                          4 дня</p>
+                        <p class="tours__nights">
+                          <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Луна.">
+                            <use href="img/sprite.svg#nights"></use>
+                          </svg>
+                          3 ночи</p>
+                      </div>
+                      <h3>Путешествие вокруг Эльбруса</h3>
+                      <div class="tours__description">
+                        <dl class="tours__level">
+                          <dt>Сложность:</dt>
+                          <dd>
+                            <svg width="79" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="3 звезды из 5.">
+                              <use href="img/sprite.svg#3stars"></use>
+                            </svg>
+                          </dd>
+                        </dl>
+                        <dl class="tours__dates">
+                          <dt>Даты набора:</dt>
+                          <dd>12.06-19.06</dd>
+                        </dl>
+                        <dl class="tours__group">
+                          <dt>Группа:</dt>
+                          <dd>до 15 чел.</dd>
+                        </dl>
+                    </div>
+                    </div>
+                  </li>
+                  <li class="tours__itme swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/altai-tablet@1x.webp, img/tours/altai-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/altai-mobile@1x.webp, img/tours/altai-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/tours/altai-desktop@1x.webp, img/tours/altai-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/altai-tablet@1x.jpg, img/tours/altai-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/caucasus-mobile@1x.jpg, img/tours/caucasus-mobile@2x.jpg 2x">
+                      <img src="img/tours/altai-desktop@1x.jpg" srcset="img/tours/altai-desktop@2x.jpg 2x" width="380" height="412" alt="Фото алтайских гор с заснеженными вершинами и озером в долине.">
+                    </picture>
+                    <div class="tours__information">
+                      <div class="tours__duration">
+                        <p class="tours__location">
+                          <svg width="9" height="12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Пин.">
+                            <use href="img/sprite.svg#pin"></use>
+                          </svg>
+                          Алтай</p>
+                        <p class="tours__days">
+                          <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Солнце.">
+                            <use href="img/sprite.svg#days"></use>
+                          </svg>
+                          14 дней</p>
+                        <p class="tours__nights">
+                          <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Луна.">
+                            <use href="img/sprite.svg#nights"></use>
+                          </svg>
+                          13 ночей</p>
+                      </div>
+                      <h3>Путь к подножию Белухи</h3>
+                      <div class="tours__description">
+                        <dl class="tours__level">
+                          <dt>Сложность:</dt>
+                          <dd>
+                            <svg width="79" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2 звезды из 5.">
+                              <use href="img/sprite.svg#2stars"></use>
+                            </svg>
+                          </dd>
+                        </dl>
+                        <dl class="tours__dates">
+                          <dt>Даты набора:</dt>
+                          <dd>14.06-23.06</dd>
+                        </dl>
+                        <dl class="tours__group">
+                          <dt>Группа:</dt>
+                          <dd>до 25 чел.</dd>
+                        </dl>
+                    </div>
+                    </div>
+                  </li>
+                  <li class="tours__itme swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/adygea-tablet@1x.webp, img/tours/adygea-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/adygea-mobile@1x.webp, img/tours/adygea-mobile@2x.webp 2x">
+                      <source type="image/webp" srcset="img/tours/adygea-desktop@1x.webp, img/tours/adygea-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/adygea-tablet@1x.jpg, img/tours/adygea-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/adygea-mobile@1x.jpg, img/tours/adygea-mobile@2x.jpg 2x">
+                      <img src="img/tours/adygea-desktop@1x.jpg" srcset="img/tours/adygea-desktop@2x.jpg 2x" width="380" height="412" alt="Фото адыгейских гор и лесами на склонах.">
+                    </picture>
+                    <div class="tours__information">
+                      <div class="tours__duration">
+                        <p class="tours__location">
+                          <svg width="9" height="12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Пин.">
+                            <use href="img/sprite.svg#pin"></use>
+                          </svg>
+                          Адыгея</p>
+                        <p class="tours__days">
+                          <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Солнце.">
+                            <use href="img/sprite.svg#days"></use>
+                          </svg>
+                          7 дней</p>
+                        <p class="tours__nights">
+                          <svg width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Луна.">
+                            <use href="img/sprite.svg#nights"></use>
+                          </svg>
+                          6 ночей</p>
+                      </div>
+                      <h3>Через Фишт к Черному морю</h3>
+                      <div class="tours__description">
+                        <dl class="tours__level">
+                          <dt>Сложность:</dt>
+                          <dd>
+                            <svg width="79" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="3 звезды из 5.">
+                              <use href="img/sprite.svg#3stars"></use>
+                            </svg>
+                          </dd>
+                        </dl>
+                        <dl class="tours__dates">
+                          <dt>Даты набора:</dt>
+                          <dd>15.07-19.07</dd>
+                        </dl>
+                        <dl class="tours__group">
+                          <dt>Группа:</dt>
+                          <dd>до 22 чел.</dd>
+                        </dl>
+                    </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="#" class="tours__link">Показать все туры
+                <svg width="9" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ко всем турам.">
+                  <use href="img/sprite.svg#tours-arrow"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </section>
-        <section class="instructors">
+        <section class="instructors" id="instructors">
           <div class="container">
             <div class="instructors__wrapper">
-
+              <div class="instructors__intro">
+                <h2>Обучение</h2>
+                <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+              </div>
+              <div class="instructors__slider">
+                <h3>Наши инструкторы</h3>
+                <button class="instructors__button instructors__button--prev" aria-label="Назад.">
+                  <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
+                    <use href="img/sprite.svg#left"></use>
+                  </svg>
+                </button>
+                <button class="instructors__button instructors__button--prev" aria-label="Вперед.">
+                  <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
+                    <use href="img/sprite.svg#right"></use>
+                  </svg>
+                </button>
+                <div class="instructors__swiper swiper">
+                  <ul class="instructors__list swiper-wrapper">
+                    <li class="instructors__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/instructors/instructor1-tablet@1x.webp, img/instructors/instructor1-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/instructors/instructor1-mobile@1x.webp, img/instructors/instructor1-mobile@2x.webp 2x">
+                        <source type="image/webp" srcset="img/instructors/instructor1-desktop@1x.webp, img/instructors/instructor1-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/instructors/instructor1-tablet@1x.jpg, img/instructors/instructor1-tablet@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/instructors/instructor1-mobile@1x.jpg, img/instructors/instructor1-mobile@2x.jpg 2x">
+                        <img src="img/instructors/instructor1-desktop@1x.jpg" srcset="img/instructors/instructor1-desktop@2x.jpg 2x" width="238" height="212" alt="Фото тренера.">
+                      </picture>
+                      <div class="instructors__title">
+                        <h4>Александр Прокофьев</h4>
+                        <a href="#" class="instructors__link">
+                          <svg width="16" height="9" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Лого Вконтакте.">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="instructors__text">
+                        <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                      </div>
+                    </li>
+                    <li class="instructors__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/instructors/instructor2-tablet@1x.webp, img/instructors/instructor2-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/instructors/instructor2-mobile@1x.webp, img/instructors/instructor2-mobile@2x.webp 2x">
+                        <source type="image/webp" srcset="img/instructors/instructor2-desktop@1x.webp, img/instructors/instructor2-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/instructors/instructor2-tablet@1x.jpg, img/instructors/instructor2-tablet@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/instructors/instructor2-mobile@1x.jpg, img/instructors/instructor2-mobile@2x.jpg 2x">
+                        <img src="img/instructors/instructor2-desktop@1x.jpg" srcset="img/instructors/instructor2-desktop@2x.jpg 2x" width="238" height="212" alt="Фото тренера.">
+                      </picture>
+                      <div class="instructors__title">
+                        <h4>Светлана Афиногенова</h4>
+                        <a href="#" class="instructors__link">
+                          <svg width="16" height="9" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Лого Вконтакте.">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="instructors__text">
+                        <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
+                      </div>
+                    </li>
+                    <li class="instructors__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/instructors/instructor3-tablet@1x.webp, img/instructors/instructor3-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/instructors/instructor3-mobile@1x.webp, img/instructors/instructor3-mobile@2x.webp 2x">
+                        <source type="image/webp" srcset="img/instructors/instructor3-desktop@1x.webp, img/instructors/instructor3-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/instructors/instructor3-tablet@1x.jpg, img/instructors/instructor3-tablet@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/instructors/instructor3-mobile@1x.jpg, img/instructors/instructor3-mobile@2x.jpg 2x">
+                        <img src="img/instructors/instructor3-desktop@1x.jpg" srcset="img/instructors/instructor3-desktop@2x.jpg 2x" width="238" height="212" alt="Фото тренера.">
+                      </picture>
+                      <div class="instructors__title">
+                        <h4>Надежда Колесниченко</h4>
+                        <a href="#" class="instructors__link">
+                          <svg width="16" height="9" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Лого Вконтакте.">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="instructors__text">
+                        <p>Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                      </div>
+                    </li>
+                    <li class="instructors__item swiper-slide">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/instructors/instructor4-tablet@1x.webp, img/instructors/instructor4-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/instructors/instructor4-mobile@1x.webp, img/instructors/instructor4-mobile@2x.webp 2x">
+                        <source type="image/webp" srcset="img/instructors/instructor4-desktop@1x.webp, img/instructors/instructor4-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/instructors/instructor4-tablet@1x.jpg, img/instructors/instructor4-tablet@2x.jpg 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/instructors/instructor4-mobile@1x.jpg, img/instructors/instructor4-mobile@2x.jpg 2x">
+                        <img src="img/instructors/instructor4-desktop@1x.jpg" srcset="img/instructors/instructor4-desktop@2x.jpg 2x" width="238" height="212" alt="Фото тренера.">
+                      </picture>
+                      <div class="instructors__title">
+                        <h4>Федор Кайгородов</h4>
+                        <a href="#" class="instructors__link">
+                          <svg width="16" height="9" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Лого Вконтакте.">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="instructors__text">
+                        <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="instructors__learning learning">
+                <h3>Процесс обучения</h3>
+                <ul class="learning__list">
+                  <li class="learning__item">
+                    <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Карта.">
+                      <use href="img/sprite.svg#map"></use>
+                    </svg>
+                    <p>Изучение спортивного туристского движения</p>
+                  </li>
+                  <li class="learning__item">
+                    <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ботинок.">
+                      <use href="img/sprite.svg#boot"></use>
+                    </svg>
+                    <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+                  </li>
+                  <li class="learning__item">
+                    <svg width="23" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ели.">
+                      <use href="img/sprite.svg#pine-tree"></use>
+                    </svg>
+                    <p>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
+                  </li>
+                  <li class="learning__item">
+                    <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Горы.">
+                      <use href="img/sprite.svg#mountain"></use>
+                    </svg>
+                    <p>Разъяснение сложности горных препятствий</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="container">
             <div class="about__wrapper">
-
+              <h2>О нас</h2>
+              <div class="about__history">
+                <h3>Истоярия компании</h3>
+                <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+              </div>
+              <div class="about__mission">
+                <h3>Наша цель</h3>
+                <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берем на&nbsp;себя все организационные вопросы. При организации мы&nbsp;обязательно учтем все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
+              </div>
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="container">
             <div class="reviews__wrapper">
 
             </div>
           </div>
         </section>
-        <section class="features">
+        <section class="features" id="features">
           <div class="container">
             <div class="features__wrapper">
 
             </div>
           </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
           <div class="container">
             <div class="gallery__wrapper">
 
             </div>
           </div>
         </section>
-        <section class="feedback">
+        <section class="feedback" id="feedback">
           <div class="container">
             <div class="feedback__wrapper">
-
+              <h2 class="feedback__title">Остались вопросы?</h2>
+              <p class="feedback__text">Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+                <div class="feedback__form form" data-form-validate="data-form-validate" data-callback="base">
+                  <form action="https://echo.htmlacademy.ru" method="post">
+                    <div class="form__inputs">
+                      <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Обязательное поле" data-required="data-required">
+                        <label aria-label="Имя.">
+                          <input type="text" name="name" placeholder="Как к вам обращаться?" autocomplete="off" required>
+                        </label>
+                      </div>
+                      <div class="custom-input" data-validate-type="phone" data-message-base="Обязательное поле"
+                        data-required="data-required">
+                        <label aria-label="Телефон.">
+                          <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
+                        </label>
+                      </div>
+                    </div>
+                    <button class="button" type="submit">Отправить</button>
+                  </form>
+                </div>
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container">
             <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <div class="contacts__description">
+                <p class="contacts__text">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+              </div>
+              <div class="contacts__info">
+                <dl>
+                  <dt>
+                    <svg width="26" height="26" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Позвонить.">
+                      <use href="img/sprite.svg#phone"></use>
+                    </svg>
+                    Телефон
+                  </dt>
+                  <dd>
+                    <a href="tel:+79837454545">8 983 745 45 45</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <svg width="26" height="26" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Написать.">
+                      <use href="img/sprite.svg#mail"></use>
+                    </svg>
+                    E-mail
+                  </dt>
+                  <dd>
+                      <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>
+                    <svg width="26" height="26" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Адрес.">
+                      <use href="img/sprite.svg#pin_stroke"></use>
+                    </svg>
+                    Адрес
+                  </dt>
+                  <dd>
+                    г. Москва, пр-т Мира, д. 14, офис 101
+                  </dd>
+                </dl>
+              </div>
+              <div class="cotacts__map" id="map">
+                <picture class="contacts__image">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/contacts/map-tablet@1x.webp 1x, img/contacts/map-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/contacts/map-desktop@1x.webp 1x, img/contacts/map-desktop@2x.webp 2x">
 
+                  <source media="(max-width: 1199px)" srcset="img/contacts/map-tablet@1x.png 1x, img/contacts/map-tablet@2x.png 2x">
+                  <source media="(max-width: 767px)" srcset="img/contacts/map-mobile@1x.png 1x, img/contacts/map-mobile@2x.png 2x">
+                  <img src="img/contacts/map-desktop@1x.png" srcset="img/contacts/map-desktop@2x.png 2x" width="585" height="324" alt="Мы находимся по адресу г. Москва, пр-т Мира, д. 14, офис 101.">
+                </picture>
+              </div>
             </div>
           </div>
         </section>
@@ -188,7 +567,62 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__wrapper">
-
+            <div class="footer__nav-wrapper">
+              <a class="footer__logo">
+                <img src="img/logo-footer.svg" width="205" height="62" alt="Логотип LifeTour, Организация походов в горы">
+              </a>
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#tours" class="footer__nav-link">Туры</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#instructors" class="footer__nav-link">Обучение</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#about" class="footer__nav-link">О нас</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#reviews" class="footer__nav-link">Отзывы</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#gallery" class="footer__nav-link">Фото</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#contacts" class="footer__nav-link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__phone">
+                <a href="tel:+78007253232">8 800 725 32 32</a>
+              </div>
+            </div>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы во Вконтакте.">
+                  <svg width="16" height="9" viewBox="0 0 16 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы в ВКонтакте.">
+                    <use href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademy" target="_blank" aria-label="Мы в Одноклассниках.">
+                  <svg width="9" height="16" viewBox="0 0 9 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы в Одноклассниках.">
+                    <use href="img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="https://t.me/htmlacademy " target="_blank" aria-label="Мы в Reddit.">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы на Реддите.">
+                    <use href="img/sprite.svg#reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <p class="footer__policy">
+              <a href="#">Политика конфиденциальности</a>
+            </p>
           </div>
         </div>
       </footer>
