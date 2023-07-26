@@ -141,7 +141,7 @@ module.exports = {
     'padded-blocks': ['off', 'never'],
     'quote-props': ['error', 'consistent'],
     'semi-spacing': 'error',
-    semi: 'error',
+    'semi': 'error',
     'space-in-parens': ['error', 'never'],
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', { named: 'never', anonymous: 'always' }],
