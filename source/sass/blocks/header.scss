@@ -1,0 +1,114 @@
+.header {
+  background-color: #499DCD;
+}
+
+.header__nav-wrapper {
+  padding: 40px 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  order: 0;
+  display: block;
+
+  @include vp-1199 {
+    order: 1;
+    width: 144px;
+    height: 44px;
+  }
+}
+
+.header__nav-toggle {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: block;
+    min-width: 60px;
+    min-height: 60px;
+  }
+}
+
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 16px;
+  justify-content: space-between;
+  list-style-type: none;
+
+  @include vp-1199 {
+    order: 0;
+    display: none;
+  }
+}
+
+.header__nav-item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 1px;
+    background-color: $color-default-white;
+    transform: scale(0);
+    transform-origin: center;
+    transition: 0.3s;
+  }
+
+  @include hover {
+    &::before {
+      transform: scale(1);
+    }
+  }
+
+  &:active {
+    &::before {
+      display: none;
+    }
+  }
+
+  &:focus a {
+    outline: solid 1px $color-default-white;
+
+    &::before {
+      display: none;
+      }
+  }
+
+}
+
+.header__nav-item a {
+  padding: 10px;
+  color: $color-default-white;
+}
+
+.header__phone {
+  display: block;
+  order: 2;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.header__phone a {
+  color: $color-default-white;
+}
+
+.header__hero {
+  padding: 0 0 80px 0;
+}

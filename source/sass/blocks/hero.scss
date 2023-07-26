@@ -1,0 +1,81 @@
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero__item {
+  position: relative;
+}
+
+.hero__item h2  {
+  margin: 0 0 25px 0;
+  padding: 0;
+  max-width: 945px;
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 77px;
+  color: $color-default-white;
+}
+
+.hero__item p {
+  margin: 0 0 35px 0;
+  padding: 0;
+  max-width: 464px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-default-white;
+}
+
+.hero__item a {
+  display: block;
+  text-align: center;
+  width: 220px;
+  background-color: $color-navy-blue;
+  padding: 21px 5px;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-default-white;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $color-elephant;
+    background-color: $color-default-white;
+    color: $color-elephant;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $color-resolution-blue;
+    color: $color-default-white;
+  }
+}
+
+.hero__video {
+  position: absolute;
+  right: 0;
+}
+
+.hero__item-info {
+  margin-top: 150px;
+  display: flex;
+  gap: 10px;
+
+}
+
+.hero__item-info svg {
+  position: absolute;
+  fill: $color-default-white;
+  top: 20px;
+  left: 20px;
+}
+
+.hero__item-info span {
+  position: relative;
+  padding: 14px 20px;
+  padding-left: 40px;
+  border: 1px solid $color-transparent;
+  color: $color-default-white;
+}
