@@ -1,0 +1,48 @@
+.about__wrapper {
+  padding: 88px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__text h2 {
+  margin: 0 0 58px 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+}
+
+.about__history h3,
+.about__mission h3 {
+  margin: 0 0 21px 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.about__history p,
+.about__mission p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0 0 26px 0;
+  padding: 0;
+}
+
+.about__background {
+  position: relative
+  ;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 808px;
+    height: 474px;
+    background-image: url(../../img/about/background-desktop@2x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -20px;
+    left: -120px;
+    z-index: -1;
+  }
+}
