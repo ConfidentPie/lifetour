@@ -24,7 +24,7 @@
           <div class="header__wrapper">
             <div class="header__nav-wrapper">
               <h1 class="visually-hidden">LifeTour. Организация походов в горы</h1>
-              <a class="header__logo">
+              <a href="#" class="header__logo">
                 <img src="img/logo.svg" width="205" height="62" alt="Логотип LifeTour, Организация походов в горы">
               </a>
               <nav class="header__nav">
@@ -140,16 +140,18 @@
           <div class="container">
             <div class="tours__wrapper">
               <h2 class="tours__title">Ближайшие туры</h2>
-              <button class="tours__button tours__button--prev" aria-label="Назад.">
-                <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
-                  <use href="img/sprite.svg#left"></use>
-                </svg>
-              </button>
-              <button class="tours__button tours__button--next" aria-label="Вперед.">
-                <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
-                  <use href="img/sprite.svg#right"></use>
-                </svg>
-              </button>
+              <div class="tours__navigation swiper-navigation">
+                <button class="tours__button tours__button--prev" aria-label="Назад.">
+                  <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
+                    <use href="img/sprite.svg#left"></use>
+                  </svg>
+                </button>
+                <button class="tours__button tours__button--next" aria-label="Вперед.">
+                  <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
+                    <use href="img/sprite.svg#right"></use>
+                  </svg>
+                </button>
+              </div>
               <div class="tours__swiper swiper">
                 <ul class="tours__list swiper-wrapper">
                   <li class="tours__itme swiper-slide">
@@ -314,17 +316,19 @@
                 <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
               </div>
               <div class="instructors__slider">
+                <div class="instructors__navigation swiper-navigation">
+                  <button class="instructors__button instructors__button--prev" aria-label="Назад.">
+                    <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
+                      <use href="img/sprite.svg#left"></use>
+                    </svg>
+                  </button>
+                  <button class="instructors__button instructors__button--next" aria-label="Вперед.">
+                    <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
+                      <use href="img/sprite.svg#right"></use>
+                    </svg>
+                  </button>
+                </div>
                 <h3>Наши инструкторы</h3>
-                <button class="instructors__button instructors__button--prev" aria-label="Назад.">
-                  <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
-                    <use href="img/sprite.svg#left"></use>
-                  </svg>
-                </button>
-                <button class="instructors__button instructors__button--next" aria-label="Вперед.">
-                  <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
-                    <use href="img/sprite.svg#right"></use>
-                  </svg>
-                </button>
                 <div class="instructors__swiper swiper">
                   <ul class="instructors__list swiper-wrapper">
                     <li class="instructors__item swiper-slide">
@@ -466,6 +470,7 @@
             <div class="reviews__wrapper">
               <h2 class="reviews__title">Отзывы</h2>
               <div class="reviews__slider">
+              <div class="reviews__navigation swiper-navigation">
                 <button class="reviews__button reviews__button--prev" aria-label="Назад.">
                   <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
                     <use href="img/sprite.svg#left"></use>
@@ -476,6 +481,7 @@
                     <use href="img/sprite.svg#right"></use>
                   </svg>
                 </button>
+              </div>
                 <div class="reviews__swiper swiper">
                   <ul class="reviews__list swiper-wrapper">
                     <li class="reviews__item swiper-slide">
@@ -607,7 +613,8 @@
                       <p>Уделяем первостепенное внимание охране окружающей среды и&nbsp;гарантируем, что туры оказывают минимальное воздействие на&nbsp;природную среду. Наша компания следует принципу &laquo;Не&nbsp;оставлять следов&raquo;.</p>
                     </li>
                   </ul>
-                  <button class="features__button features__button--prev" aria-label="Назад.">
+                  <div class="features__navigation swiper-navigation">
+                    <button class="features__button features__button--prev" aria-label="Назад.">
                     <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
                       <use href="img/sprite.svg#left"></use>
                     </svg>
@@ -617,6 +624,7 @@
                       <use href="img/sprite.svg#right"></use>
                     </svg>
                   </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -658,10 +666,9 @@
         <section class="contacts" id="contacts">
           <div class="container">
             <div class="contacts__wrapper">
-              <h2>Контакты</h2>
               <div class="contacts__description">
+              <h2>Контакты</h2>
                 <p class="contacts__text">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
-              </div>
               <div class="contacts__info">
                 <dl>
                   <dt>
@@ -697,7 +704,9 @@
                   </dd>
                 </dl>
               </div>
-              <div class="cotacts__map" id="map">
+            </div>
+              <div class="contacts__map">
+                <div class="contacts__container" id="map"></div>
                 <picture class="contacts__image">
                   <source type="image/webp" media="(max-width: 1199px)" srcset="img/contacts/map-tablet@1x.webp 1x, img/contacts/map-tablet@2x.webp 2x">
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
@@ -716,7 +725,7 @@
         <div class="container">
           <div class="footer__wrapper">
             <div class="footer__nav-wrapper">
-              <a class="footer__logo">
+              <a href="#" class="footer__logo">
                 <img src="img/logo-footer.svg" width="205" height="62" alt="Логотип LifeTour, Организация походов в горы">
               </a>
               <nav class="footer__nav">
@@ -748,21 +757,21 @@
             <ul class="footer__social-list">
               <li class="footer__social-item">
                 <a class="footer__social-link" href="https://vk.com/htmlacademy" target="_blank" aria-label="Мы во Вконтакте.">
-                  <svg width="16" height="9" viewBox="0 0 16 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы в ВКонтакте.">
+                  <svg width="16" height="16" viewBox="0 0 16 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы в ВКонтакте.">
                     <use href="img/sprite.svg#vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
                 <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademy" target="_blank" aria-label="Мы в Одноклассниках.">
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы в Одноклассниках.">
+                  <svg width="16" height="16" viewBox="0 0 9 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы в Одноклассниках.">
                     <use href="img/sprite.svg#ok"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
                 <a class="footer__social-link" href="https://t.me/htmlacademy " target="_blank" aria-label="Мы в Reddit.">
-                  <svg width="14" height="15" viewBox="0 0 14 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы на Реддите.">
+                  <svg width="15" height="15" viewBox="0 0 14 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мы на Реддите.">
                     <use href="img/sprite.svg#reddit"></use>
                   </svg>
                 </a>
