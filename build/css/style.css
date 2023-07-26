@@ -1528,7 +1528,7 @@ button,
   width: 40px;
   height: 40px;
   padding: 0;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.5);
   border: none;
   cursor: pointer;
 }
@@ -2075,6 +2075,222 @@ button,
   color: #15ab07;
 }
 
+.header {
+  background-color: #499DCD;
+}
+
+.header__nav-wrapper {
+  padding: 40px 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__logo {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  display: block;
+}
+@media (max-width: 1199px) {
+  .header__logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 144px;
+    height: 44px;
+  }
+}
+
+.header__nav-toggle {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .header__nav-toggle {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: block;
+    min-width: 60px;
+    min-height: 60px;
+  }
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+@media (max-width: 1199px) {
+  .header__nav-list {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    display: none;
+  }
+}
+
+.header__nav-item {
+  position: relative;
+}
+.header__nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 1px;
+  background-color: #ffffff;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (hover: hover) {
+  .header__nav-item:hover:not(.focus-visible)::before {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.header__nav-item:active::before {
+  display: none;
+}
+.header__nav-item:focus a {
+  outline: solid 1px #ffffff;
+}
+.header__nav-item:focus a::before {
+  display: none;
+}
+
+.header__nav-item a {
+  padding: 10px;
+  color: #ffffff;
+}
+
+.header__phone {
+  display: block;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.header__phone a {
+  color: #ffffff;
+}
+
+.header__hero {
+  padding: 0 0 80px 0;
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero__item {
+  position: relative;
+}
+
+.hero__item h2 {
+  margin: 0 0 25px 0;
+  padding: 0;
+  max-width: 945px;
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 77px;
+  color: #ffffff;
+}
+
+.hero__item p {
+  margin: 0 0 35px 0;
+  padding: 0;
+  max-width: 464px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.hero__item a {
+  display: block;
+  text-align: center;
+  width: 220px;
+  background-color: #0266c1;
+  padding: 21px 5px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.hero__item a:hover, .hero__item a:focus {
+  outline: 1px solid #2d383f;
+  background-color: #ffffff;
+  color: #2d383f;
+}
+.hero__item a:active {
+  outline: none;
+  background-color: #1C3374;
+  color: #ffffff;
+}
+
+.hero__video {
+  position: absolute;
+  right: 0;
+}
+
+.hero__item-info {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.hero__item-info svg {
+  position: absolute;
+  fill: #ffffff;
+  top: 20px;
+  left: 20px;
+}
+
+.hero__item-info span {
+  position: relative;
+  padding: 14px 20px;
+  padding-left: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
 .contacts__wrapper {
   display: -ms-grid;
   display: grid;
@@ -2336,7 +2552,6 @@ button,
   padding: 0;
   font-size: 16px;
   line-height: 16px;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
