@@ -2,7 +2,12 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initLeaflet} from './modules/leaflet/init-leaflet';
-import {initSliderHero} from './modules/sliders/init-hero-sloder';
+import {getSlidesTabs} from './modules/sliders/get-slide-tabs';
+import {initSliderHero} from './modules/sliders/init-hero-slider';
+import {initSliderTours} from './modules/sliders/init-tours-slider';
+import {initSliderInstructors} from './modules/sliders/init-instructors-slider';
+import {initSliderReviews} from './modules/sliders/init-reviews-slider';
+import {initSliderFeatures} from './modules/sliders/init-features-slider';
 
 // ---------------------------------
 
@@ -24,7 +29,12 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initLeaflet();
+    getSlidesTabs();
     initSliderHero();
+    initSliderTours();
+    initSliderInstructors();
+    initSliderReviews();
+    initSliderFeatures();
   });
 });
 
