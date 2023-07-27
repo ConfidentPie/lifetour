@@ -1,19 +1,27 @@
 .hero__list {
   margin: 0;
   padding: 0;
-
 }
 
 .hero__item {
-  position: relative;
   list-style-type: none;
 }
 
-.hero__item img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  z-index: -1;
+.hero__item--caucasus {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(../../img/hero/caucasus-desktop@1x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 100px;
+    left: -80px;
+    width: 1440px;
+    height: 808px;
+    z-index: -1;
+  }
 }
 
 .hero__item h2  {

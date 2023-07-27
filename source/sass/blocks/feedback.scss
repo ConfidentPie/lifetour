@@ -1,0 +1,69 @@
+.feedback {
+  background-image: url(../../img/feedback/bg-desktop@1x.webp);
+  background-size: cover;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url(../../img/feedback/bg-desktop@2x.webp);
+  }
+
+  @include vp-1199 {
+    background-image:  url(../../img/feedback/bg-tablet@1x.webp);
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(../../img/feedback/bg-tablet@2x.webp);
+    }
+  }
+
+  @include vp-767 {
+    background-image:  url(../../img/feedback/bg-mobile@1x.webp);
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url(../../img/feedback/bg-mobile@2x.webp);
+    }
+  }
+}
+
+.feedback__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 308px 0 307px;
+
+  @include vp-1199 {
+    padding: 192px 0 183px;
+  }
+
+  @include vp-767 {
+    padding: 181px 0 175px;
+  }
+}
+
+.feedback__title {
+  margin: 0 0 20px 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    margin: 0 0 15px 0;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.feedback__wrapper p {
+  margin: 0 0 42px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    margin: 0 0 30px 0;
+  }
+}

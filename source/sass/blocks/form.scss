@@ -1,0 +1,52 @@
+.form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+.form__inputs {
+  display: flex;
+  gap: 30px;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  width: 238px;
+  padding: 24px 9px;
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+  box-shadow: none;
+  border: none;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $color-elephant;
+    background-color: $color-default-white;
+    color: $color-elephant;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $color-resolution-blue;
+    color: $color-default-white;
+  }
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
