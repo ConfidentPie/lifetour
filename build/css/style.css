@@ -2218,14 +2218,22 @@ button,
 }
 
 .hero__item {
-  position: relative;
   list-style-type: none;
 }
 
-.hero__item img {
+.hero__item--caucasus {
+  position: relative;
+}
+.hero__item--caucasus::after {
+  position: absolute;
+  content: "";
+  background-image: url(../../img/hero/caucasus-desktop@1x.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  top: 100px;
+  left: -80px;
+  width: 1440px;
+  height: 808px;
   z-index: -1;
 }
 
@@ -2299,6 +2307,247 @@ button,
   color: #ffffff;
 }
 
+.tours__wrapper {
+  position: relative;
+  padding: 100px 0 102px;
+}
+@media (max-width: 1199px) {
+  .tours__wrapper {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .tours__wrapper {
+    padding: 60px 0;
+  }
+}
+
+.tours__title {
+  position: relative;
+  margin: 0 0 58px 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+}
+.tours__title::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 55px;
+  color: #2d383f;
+  opacity: 0.03;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .tours__title {
+    margin: 0 0 46px 0;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .tours__title::after {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__title {
+    margin: 0 0 28px 0;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .tours__title::after {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.tours__navigation {
+  position: absolute;
+  right: -5px;
+  top: 104px;
+}
+@media (max-width: 1199px) {
+  .tours__navigation {
+    top: 55px;
+  }
+}
+
+.tours__button {
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  border: none;
+}
+.tours__button svg {
+  color: #ffffff;
+}
+.tours__button:hover, .tours__button:focus {
+  outline: 1px solid #2d383f;
+  background-color: #ffffff;
+}
+.tours__button:hover svg, .tours__button:focus svg {
+  color: #2d383f;
+}
+.tours__button:active {
+  outline: none;
+  background-color: #1C3374;
+}
+.tours__button:active svg {
+  color: #ffffff;
+}
+
+.tours__list {
+  margin: 0 0 52px 0;
+  padding: 0;
+}
+
+.tours__item {
+  position: relative;
+  list-style-type: none;
+}
+
+.tours__information {
+  position: absolute;
+  padding: 28px 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(61.9%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 61.9%, rgba(0, 0, 0, 0) 100%);
+}
+
+.tours__information h3 {
+  position: relative;
+  margin: 0 0 38px 0;
+  padding: 0 107px 0 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.tours__information h3::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  left: 0;
+  bottom: -17px;
+}
+@media (max-width: 1199px) {
+  .tours__information h3 {
+    padding: 0 51px 0 0;
+  }
+}
+
+.tours__duration {
+  width: 100%;
+  margin: 0 0 23px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tours__duration p {
+  margin: 0;
+}
+
+.tours__location {
+  padding: 9px 25px;
+  background-color: #0266c1;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+}
+
+.tours__days,
+.tours__nights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.tours__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tours__description dl,
+.tours__description dt,
+.tours__description dd {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.tours__description dt {
+  margin-bottom: 6px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}
+
+.tours__description dd {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+}
+
+.tours__level svg {
+  color: transparent;
+}
+
+.tours__link {
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tours__link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+}
+
+.tours__link svg {
+  color: transparent;
+}
+
 .about__wrapper {
   padding: 88px 0 30px;
   display: -ms-grid;
@@ -2308,11 +2557,46 @@ button,
 }
 
 .about__text h2 {
+  position: relative;
   margin: 0 0 58px 0;
   padding: 0;
   font-size: 35px;
   line-height: 35px;
   font-weight: 800;
+}
+.about__text h2::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 55px;
+  color: #2d383f;
+  opacity: 0.03;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .about__text h2 {
+    margin: 0 0 36px 0;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .about__text h2::after {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .about__text h2 {
+    margin: 0 0 33px 0;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .about__text h2::after {
+    font-size: 26px;
+    line-height: 26px;
+  }
 }
 
 .about__history h3,
@@ -2383,11 +2667,24 @@ button,
 }
 
 .contacts__wrapper h2 {
+  position: relative;
   margin: 0 0 23px 0;
   padding: 0;
   font-weight: 800;
   font-size: 35px;
   line-height: 35px;
+}
+.contacts__wrapper h2::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 55px;
+  color: #2d383f;
+  opacity: 0.03;
+  z-index: -1;
 }
 @media (max-width: 1199px) {
   .contacts__wrapper h2 {
@@ -2395,12 +2692,20 @@ button,
     font-size: 25px;
     line-height: 25px;
   }
+  .contacts__wrapper h2::after {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 @media (max-width: 767px) {
   .contacts__wrapper h2 {
     margin: 0 0 12px 0;
     font-size: 22px;
     line-height: 22px;
+  }
+  .contacts__wrapper h2::after {
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 

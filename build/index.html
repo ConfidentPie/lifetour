@@ -61,7 +61,6 @@
                 <div class="hero__swiper swiper">
                   <ul class="hero__list swiper-wrapper">
                     <li class="hero__item hero__item--caucasus swiper-slide">
-                      <img src="img/hero/caucasus-desktop@1x.webp">
                       <h2>Захватывающие вершины Кавказа</h2>
                       <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
                       <a href="#">Смотреть тур</a>
@@ -140,14 +139,14 @@
         <section class="tours" id="tours">
           <div class="container">
             <div class="tours__wrapper">
-              <h2 class="tours__title">Ближайшие туры</h2>
+              <h2 class="tours__title" data-text="Ближайшие туры">Ближайшие туры</h2>
               <div class="tours__navigation swiper-navigation">
-                <button class="tours__button tours__button--prev" aria-label="Назад.">
+                <button class="tours__button swiper__button--prev" aria-label="Назад.">
                   <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
                     <use href="img/sprite.svg#left"></use>
                   </svg>
                 </button>
-                <button class="tours__button tours__button--next" aria-label="Вперед.">
+                <button class="tours__button swiper__button--next" aria-label="Вперед.">
                   <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
                     <use href="img/sprite.svg#right"></use>
                   </svg>
@@ -155,7 +154,7 @@
               </div>
               <div class="tours__swiper swiper">
                 <ul class="tours__list swiper-wrapper">
-                  <li class="tours__itme swiper-slide">
+                  <li class="tours__item swiper-slide">
                     <picture>
                       <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/caucasus-tablet@1x.webp, img/tours/caucasus-tablet@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/caucasus-mobile@1x.webp, img/tours/caucasus-mobile@2x.webp 2x">
@@ -203,7 +202,7 @@
                     </div>
                     </div>
                   </li>
-                  <li class="tours__itme swiper-slide">
+                  <li class="tours__item swiper-slide">
                     <picture>
                       <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/altai-tablet@1x.webp, img/tours/altai-tablet@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/altai-mobile@1x.webp, img/tours/altai-mobile@2x.webp 2x">
@@ -230,7 +229,7 @@
                           </svg>
                           13 ночей</p>
                       </div>
-                      <h3>Путь к подножию Белухи</h3>
+                      <h3>Путь к&nbsp;подножию Белухи</h3>
                       <div class="tours__description">
                         <dl class="tours__level">
                           <dt>Сложность:</dt>
@@ -251,7 +250,7 @@
                     </div>
                     </div>
                   </li>
-                  <li class="tours__itme swiper-slide">
+                  <li class="tours__item swiper-slide">
                     <picture>
                       <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/adygea-tablet@1x.webp, img/tours/adygea-tablet@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/adygea-mobile@1x.webp, img/tours/adygea-mobile@2x.webp 2x">
@@ -278,7 +277,7 @@
                           </svg>
                           6 ночей</p>
                       </div>
-                      <h3>Через Фишт к Черному морю</h3>
+                      <h3>Через Фишт к&nbsp;Черному морю</h3>
                       <div class="tours__description">
                         <dl class="tours__level">
                           <dt>Сложность:</dt>
@@ -301,11 +300,13 @@
                   </li>
                 </ul>
               </div>
-              <a href="#" class="tours__link">Показать все туры
-                <svg width="9" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ко всем турам.">
-                  <use href="img/sprite.svg#tours-arrow"></use>
-                </svg>
-              </a>
+              <div class="tours__link">
+                <a href="#">Показать все туры
+                  <svg width="9" height="14" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ко всем турам.">
+                    <use href="img/sprite.svg#tours-arrow"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -456,7 +457,7 @@
             <div class="about__wrapper">
               <div class="about__background"></div>
               <div class="about__text">
-                <h2>О нас</h2>
+                <h2 data-text="О нас">О нас</h2>
                <div class="about__history">
                   <h3>Истоярия компании</h3>
                   <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
@@ -671,7 +672,7 @@
           <div class="container">
             <div class="contacts__wrapper">
               <div class="contacts__description">
-              <h2>Контакты</h2>
+              <h2 data-text="Контакты">Контакты</h2>
                 <p class="contacts__text">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
               <div class="contacts__info">
                 <dl>
