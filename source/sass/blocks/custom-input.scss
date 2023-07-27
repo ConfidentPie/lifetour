@@ -3,8 +3,12 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  width: 340px;
+  padding: 0;
+
+  @include vp-1199 {
+    width: 266px;
+  }
 
   @media screen and (max-width: 767px) {
     padding: 4px 0 48px;
@@ -24,28 +28,37 @@
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
+      max-width: 340px;
       min-height: 48px;
       margin-left: auto;
-      padding: 10px;
-
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      padding: 24px 30px;
+      border: none;
+      border-radius: 0;
       outline: none;
 
-      transition: border 0.3s ease;
+      @include vp-1199 {
+        padding: 18px 15px;
+      }
 
       @media screen and (max-width: 767px) {
         max-width: unset;
         width: 100%;
       }
 
+      &:hover::placeholder {
+        color: $color-navy-blue;
+      }
+
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        outline: 2px solid $color-navy-blue;
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        outline: 2px solid $color-elephant;
+      }
+
+      &:focus::placeholder {
+        color: $color-elephant;
       }
     }
   }
@@ -84,16 +97,16 @@
     }
   }
 
-  &.is-valid {
-    input {
-      border: 2px solid #22b259;
+  // &.is-valid {
+  //   input {
+  //     border: 2px solid #22b259;
 
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
-      }
-    }
-  }
+  //     &:focus,
+  //     &:hover {
+  //       border: 2px solid rgba(#22b259, 0.5);
+  //     }
+  //   }
+  // }
 
   .input-message {
     position: absolute;
