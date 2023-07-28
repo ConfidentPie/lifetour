@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-color: #499DCD;
+  background-color: #499dcd;
 }
 
 .header__nav-wrapper {
@@ -32,7 +32,6 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
-    display: block;
     min-width: 60px;
     min-height: 60px;
   }
@@ -88,9 +87,8 @@
 
     &::before {
       display: none;
-      }
+    }
   }
-
 }
 
 .header__nav-item a {

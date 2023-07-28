@@ -13,7 +13,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url(../../img/hero/caucasus-desktop@1x.webp);
+    background-image: url("../../img/hero/caucasus-desktop@1x.webp");
     background-repeat: no-repeat;
     background-size: cover;
     top: 100px;
@@ -24,7 +24,7 @@
   }
 }
 
-.hero__item h2  {
+.hero__item h2 {
   margin: 0 0 25px 0;
   padding: 0;
   max-width: 945px;
@@ -78,7 +78,6 @@
   margin-top: 150px;
   display: flex;
   gap: 10px;
-
 }
 
 .hero__item-info svg {
