@@ -21,12 +21,13 @@
 
   @include vp-1199 {
     &::after {
-      right: -300px;
+      width: 301px;
+      background-image: url(../../img/tours/clouds-tablet@1x.png);
     }
 
     @media (min-resolution: $retina-dppx) {
       &::after {
-      right: -300px;
+      background-image: url(../../img/tours/clouds-tablet@2x.png)
       }
     }
   }

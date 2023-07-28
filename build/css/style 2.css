@@ -3041,25 +3041,14 @@ button,
   color: #ffffff;
 }
 
-.reviews__swiper {
-  padding: 30px;
-  margin: -30px;
-}
-
 .reviews__item {
-  width: 790px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 37% 63%;
-  grid-template-columns: 37% 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 30px;
-  padding: 20px 40px 20px 20px;
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
-          box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
 }
 
 .reviews__text {
-  padding: 16px 0 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3067,36 +3056,6 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.reviews__text p {
-  margin: 0 0 auto 0;
-  padding: 0;
-}
-
-.reviews__text span {
-  margin-bottom: 24px;
-}
-
-.reviews__author {
-  margin: 0;
-  padding: 0;
-}
-
-.reviews__author dt {
-  margin: 0 0 8px 0;
-  padding: 0;
-  font-size: 13px;
-  line-height: 13px;
-  font-weight: 700;
-}
-
-.reviews__author dd {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 300;
 }
 
 .feedback {

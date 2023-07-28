@@ -1,0 +1,134 @@
+.reviews__wrapper {
+  position: relative;
+  padding: 49px 0 113px;
+}
+
+.reviews__wrapper h2 {
+  position: relative;
+  margin: 0 0 31px 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: $color-elephant;
+    opacity: 0.03;
+    z-index: 1;
+  }
+
+  @include vp-1199 {
+    margin: 0 0 30px 0;
+    font-size: 25px;
+    line-height: 25px;
+
+    &::after {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+
+    &::after {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.reviews__navigation {
+  position: absolute;
+  right: 0;
+  top: 49px;
+}
+
+.reviews__button {
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  border: none;
+
+  & svg {
+    color: $color-default-white;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $color-elephant;
+    background-color: $color-default-white;
+
+    & svg {
+      color: $color-elephant;
+    }
+  }
+
+  &:active {
+    outline: none;
+    background-color: $color-resolution-blue;
+
+    & svg {
+      color: $color-default-white;
+    }
+  }
+}
+
+.reviews__swiper {
+  padding: 30px;
+  margin: -30px
+}
+
+.reviews__item {
+  width: 790px;
+  display: grid;
+  grid-template-columns: 37% 63%;
+  gap: 30px;
+  padding: 20px 40px 20px 20px;
+  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.10);
+
+}
+
+.reviews__text {
+  padding: 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__text p {
+  margin: 0 0 auto 0;
+  padding: 0;
+}
+
+.reviews__text span {
+  margin-bottom: 24px;
+}
+
+.reviews__author {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__author dt {
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+}
+
+.reviews__author dd {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}

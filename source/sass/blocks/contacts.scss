@@ -138,7 +138,7 @@
 }
 
 .contacts__map {
-
+  position: relative;
   padding-top: 74px;
 
   @include vp-1199 {
@@ -148,25 +148,13 @@
   }
 }
 
-.contacts__image {
-  position: relative;
-  width: 100vw;
-  height: 324px;
-
-  @include vp-1199 {
-    padding: 0;
-    height: 340px;
-  }
-}
-
 .contacts__container {
   position: absolute;
   height: 324px;
-  min-width: 585px;
+  width: 100%;
 
   @include vp-1199 {
     height: 340px;
-    // width: 100vw;
   }
 
   @include vp-767 {
