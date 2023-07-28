@@ -72,14 +72,13 @@
   padding: 0;
   font-size: 21px;
   line-height: 21px;
-  font-weight:  700;
+  font-weight: 700;
 }
 
 .instructors__navigation {
   position: absolute;
   right: 0;
   top: 0;
-
 }
 
 .instructors__button {
@@ -114,7 +113,7 @@
 
 .instructors__swiper {
   padding: 30px;
-  margin: -30px
+  margin: -30px;
 }
 
 .instructors__list {
@@ -125,7 +124,7 @@
 .instructors__item {
   min-height: 377px;
   padding: 20px 20px 36px;
-  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.10);
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   list-style-type: none;
 }
 
