@@ -1,0 +1,72 @@
+.gallery__wrapper h2 {
+  position: relative;
+  margin: 0 0 31px 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: $color-elephant;
+    opacity: 0.03;
+    z-index: 1;
+  }
+
+  @include vp-1199 {
+    margin: 0 0 30px 0;
+    font-size: 25px;
+    line-height: 25px;
+
+    &::after {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+
+    &::after {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.gallery__button {
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  border: none;
+
+  & svg {
+    color: $color-default-white;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $color-elephant;
+    background-color: $color-default-white;
+
+    & svg {
+      color: $color-elephant;
+    }
+  }
+
+  &:active {
+    outline: none;
+    background-color: $color-resolution-blue;
+
+    & svg {
+      color: $color-default-white;
+    }
+  }
+}
