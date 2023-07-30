@@ -1207,6 +1207,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 html {
@@ -2628,6 +2629,10 @@ button,
   background-color: transparent;
 }
 
+.instructors__wrapper {
+  padding: 0 0 127px 0;
+}
+
 .instructors__intro {
   margin-bottom: 52px;
 }
@@ -2773,6 +2778,21 @@ button,
   margin: 0;
 }
 
+.learning {
+  position: relative;
+}
+.learning::after {
+  position: absolute;
+  content: "";
+  background: url("../../img/features/clouds-small.svg");
+  background-repeat: no-repeat;
+  width: 840px;
+  height: 280px;
+  top: 100px;
+  right: -380px;
+  z-index: -1;
+}
+
 .learning h3 {
   margin: 0 0 45px 0;
   padding: 0;
@@ -2798,6 +2818,7 @@ button,
 }
 
 .learning__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2806,6 +2827,16 @@ button,
           align-items: center;
   list-style-type: none;
   gap: 15px;
+}
+.learning__item::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0266c1;
+  bottom: -52px;
+  left: 0;
 }
 
 .learning__item p {
@@ -2824,6 +2855,17 @@ button,
 .learning__item svg {
   width: 50px;
   height: 50px;
+}
+
+.learning__decor {
+  position: absolute;
+  background: url("../../img/svg/line-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -45px;
+  left: -1000%;
+  width: 10000%;
+  height: 1px;
 }
 
 .about {
@@ -3047,14 +3089,15 @@ button,
 
 .reviews__item {
   width: 790px;
+  padding: 20px 40px 20px 20px;
   display: -ms-grid;
   display: grid;
+  gap: 30px;
   -ms-grid-columns: 37% 63%;
   grid-template-columns: 37% 63%;
-  gap: 30px;
-  padding: 20px 40px 20px 20px;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  background-color: #ffffff;
 }
 
 .reviews__text {
@@ -3098,6 +3141,31 @@ button,
   font-weight: 300;
 }
 
+.features {
+  position: relative;
+}
+.features::before {
+  position: absolute;
+  content: "";
+  background: url("../../img/features/clouds.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1170px;
+  height: 391px;
+  top: -230px;
+  left: -340px;
+}
+.features::after {
+  position: absolute;
+  content: "";
+  background: url("../../img/features/clouds-small.svg");
+  background-repeat: no-repeat;
+  width: 788px;
+  height: 263px;
+  top: -30px;
+  right: -230px;
+}
+
 .features__wrapper {
   padding: 0 0 107px 0;
 }
@@ -3115,7 +3183,7 @@ button,
   content: attr(data-text);
   position: absolute;
   bottom: 0;
-  left: 370px;
+  left: 30.5%;
   font-weight: 800;
   font-size: 55px;
   line-height: 55px;
@@ -3157,6 +3225,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #ffffff;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;

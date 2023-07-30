@@ -1,3 +1,32 @@
+.features {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../../img/features/clouds.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1170px;
+    height: 391px;
+    top: -230px;
+    left: -340px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../../img/features/clouds-small.svg");
+    background-repeat: no-repeat;
+
+    width: 788px;
+    height: 263px;
+    top: -30px;
+    right: -230px;
+  }
+}
+
+
 .features__wrapper {
   padding: 0 0 107px 0;
 }
@@ -15,7 +44,7 @@
     content: attr(data-text);
     position: absolute;
     bottom: 0;
-    left: 370px;
+    left: 30.5%;
     font-weight: 800;
     font-size: 55px;
     line-height: 55px;
@@ -53,6 +82,7 @@
 .features__item {
   display: flex;
   flex-direction: column;
+  background-color: $color-default-white;
   text-align: center;
   align-items: center;
   list-style-type: none;
