@@ -1,3 +1,20 @@
+.learning {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../../img/features/clouds-small.svg");
+    background-repeat: no-repeat;
+
+    width: 840px;
+    height: 280px;
+    top: 100px;
+    right: -380px;
+    z-index: -1;
+  }
+}
+
 .learning h3 {
   margin: 0 0 45px 0;
   padding: 0;
@@ -20,10 +37,22 @@
 }
 
 .learning__item {
+  position: relative;
   display: flex;
   align-items: center;
   list-style-type: none;
   gap: 15px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width:  14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $color-navy-blue;
+    bottom: -52px;
+    left: 0;
+  }
 }
 
 .learning__item p {
@@ -41,4 +70,15 @@
 .learning__item svg {
   width: 50px;
   height: 50px;
+}
+
+.learning__decor {
+  position: absolute;
+  background: url("../../img/svg/line-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -45px;
+  left: -1000%;
+  width: 10000%;
+  height: 1px;
 }
