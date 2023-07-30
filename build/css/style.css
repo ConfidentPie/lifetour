@@ -2276,6 +2276,7 @@ button,
 }
 
 .hero__item h2 {
+  position: relative;
   margin: 0 0 25px 0;
   padding: 0;
   max-width: 945px;
@@ -2283,6 +2284,7 @@ button,
   font-weight: 800;
   line-height: 77px;
   color: #ffffff;
+  z-index: 2;
 }
 
 .hero__item p {
@@ -2319,7 +2321,61 @@ button,
 
 .hero__video {
   position: absolute;
+  width: 482px;
+  height: 317px;
   right: 0;
+  bottom: 110px;
+  background-color: #1c3374;
+  z-index: 1;
+}
+
+.hero__video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero__video-player {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .hero__video-player {
+    aspect-ratio: 442/300;
+  }
+}
+
+.hero__video-button {
+  position: absolute;
+  padding: 0;
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 56px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  z-index: 3;
+  cursor: pointer;
+}
+.hero__video-button::after {
+  margin: 0;
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 2px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(2, 102, 193, 0.1);
+  border: 1px solid #ffffff;
 }
 
 .hero__item-info {
@@ -2751,6 +2807,7 @@ button,
   padding: 20px 20px 36px;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  background-color: #ffffff;
   list-style-type: none;
 }
 

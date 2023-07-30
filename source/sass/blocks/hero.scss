@@ -25,6 +25,7 @@
 }
 
 .hero__item h2 {
+  position: relative;
   margin: 0 0 25px 0;
   padding: 0;
   max-width: 945px;
@@ -32,6 +33,7 @@
   font-weight: 800;
   line-height: 77px;
   color: $color-default-white;
+  z-index: 2;
 }
 
 .hero__item p {
@@ -71,7 +73,58 @@
 
 .hero__video {
   position: absolute;
+  width: 482px;
+  height: 317px;
   right: 0;
+  bottom: 110px;
+  background-color: $color-resolution-blue;
+  z-index: 1;
+}
+
+.hero__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__video-player {
+  width: 100%;
+  height: 100%;
+
+  @include vp-767 {
+    aspect-ratio: 442/300;
+  }
+}
+
+.hero__video-button {
+  position: absolute;
+  padding: 0;
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 56px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  z-index: 3;
+  cursor: pointer;
+
+  &::after {
+    margin: 0;
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 2px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: $color-disabled;
+    border: 1px solid $color-default-white;
+  }
 }
 
 .hero__item-info {
