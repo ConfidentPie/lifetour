@@ -13,6 +13,12 @@
     right: -380px;
     z-index: -1;
   }
+
+  @include vp-1199 {
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .learning h3 {
@@ -34,6 +40,12 @@
   padding: 0;
   display: flex;
   gap: 30px;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 91px 76px
+  }
 }
 
 .learning__item {
@@ -53,6 +65,12 @@
     bottom: -52px;
     left: 0;
   }
+
+  @include vp-1199 {
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .learning__item p {
@@ -68,8 +86,8 @@
 }
 
 .learning__item svg {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 
 .learning__decor {
@@ -81,4 +99,12 @@
   left: -1000%;
   width: 10000%;
   height: 1px;
+
+  @include vp-1199 {
+    background: url("../../img/svg/line-tablet.svg");
+    bottom: 65px;
+    left: 0;
+    width: 368px;
+    height: 68px;
+  }
 }

@@ -24,11 +24,22 @@
     top: -30px;
     right: -230px;
   }
+
+  @include vp-1199 {
+    &::after,
+    &::before {
+      content: none;
+    }
+  }
 }
 
 
 .features__wrapper {
   padding: 0 0 107px 0;
+
+  @include vp-1199 {
+    padding: 0 0 70px 0;
+  }
 }
 
 .features__wrapper h2 {
@@ -59,6 +70,7 @@
     line-height: 25px;
 
     &::after {
+      left: 25.5%;
       font-size: 40px;
       line-height: 40px;
     }
@@ -76,7 +88,16 @@
 }
 
 .features__list {
+  padding: 0;
   margin: 0 0 50px 0;
+
+  @include vp-1199 {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
 }
 
 .features__item {
@@ -89,13 +110,26 @@
   padding: 40px 20px;
   border: 1px solid $color-disabled;
 
+  @include vp-1199 {
+    margin: 0 auto;
+    flex-basis: 50%;
+    max-width: 324px;
+    height: auto;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
 }
 
 .features__item svg {
   width: 50px;
   height: 50px;
   padding: 13px;
-  border: 1px solid $color-disabled;
+  border: 1px solid $color-navy-blue;
+
+  @include vp-1199 {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .features__button {
@@ -128,7 +162,28 @@
   }
 }
 
+.features__item h3 {
+  margin: 30px 0 15px;
+
+  @include vp-1199 {
+    margin: 25px 0 15px;
+  }
+}
+
+.features__item p {
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
 .features__navigation {
   padding: 0 0 1px 0;
   text-align: center;
+
+  @include vp-1199 {
+    display:  none;
+  }
 }

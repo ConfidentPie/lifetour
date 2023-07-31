@@ -20,7 +20,7 @@ const initSliderReviews = () => {
         },
 
         768: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.20,
           spaceBetween: 30,
         },
 
