@@ -12,9 +12,11 @@ const initSliderFeatures = () => {
         prevEl: buttonPrev,
       },
 
+      centeredSlides: true,
+
       breakpoints: {
         1200: {
-          slidesPerView: 3,
+          slidesPerView: 3.6,
           spaceBetween: 30,
         },
       },

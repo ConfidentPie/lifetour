@@ -15,6 +15,7 @@
 }
 
 .header__logo {
+  color: $color-default-white;
   order: 0;
   display: block;
 
@@ -25,7 +26,7 @@
   }
 }
 
-.header-nav--opened .header__logo {
+.header-nav--opened + .header__logo {
   fill: $color-default-black;
 }
 
@@ -68,7 +69,7 @@
   }
 }
 
-.header-nav--opened .header-nav__toggle {
+.header__nav--opened .header__nav-toggle {
   &::before,
   &::after {
     content: "";
@@ -81,14 +82,31 @@
   }
 
   &::before {
+    background-color: $color-default-black;
     transform: rotate(45deg);
     box-shadow: none;
   }
 
   &::after {
+    background-color: $color-default-black;
     transform: rotate(-45deg);
+    box-shadow: none;
   }
 }
+
+.header__nav--opened .header__nav-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px 70px;
+  gap: 26px;
+  width: 100%;
+  font-weight: 700;
+  left:0;
+  background-color: $color-default-white;
+  z-index: 4;
+}
+
 
 .header__nav-list {
   display: flex;
@@ -106,6 +124,13 @@
     display: none;
   }
 }
+
+.header__nav--nojs .header__nav-list {
+    position: relative;
+    top: 0;
+    margin: 0;
+}
+
 
 .header__nav-item {
   position: relative;
@@ -144,6 +169,20 @@
   }
 }
 
+.header__nav--opened .header__nav-item {
+  width: fit-content;
+  padding-left: auto;
+
+  &::before {
+    background-color: $color-default-black;
+  }
+}
+
+.header__nav--opened .header__nav-item a {
+  color: $color-default-black;
+  text-transform: uppercase;
+}
+
 .header__nav-item a {
   padding: 10px;
   color: $color-default-white;
@@ -166,7 +205,7 @@
   color: $color-default-white;
 }
 
-.header-nav--opened .header__phone a {
+.header__nav--opened + .header__phone a {
   color: $color-default-black;
 }
 
