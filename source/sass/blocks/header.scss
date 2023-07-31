@@ -8,6 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include vp-1199 {
+    padding: 30px 0 100px;
+  }
 }
 
 .header__logo {
@@ -21,6 +25,10 @@
   }
 }
 
+.header-nav--opened .header__logo {
+  fill: $color-default-black;
+}
+
 .header__nav-toggle {
   display: none;
 
@@ -29,11 +37,56 @@
     position: relative;
     width: 26px;
     height: 26px;
+    left: -15px;
     cursor: pointer;
     border: none;
     background-color: transparent;
     min-width: 60px;
     min-height: 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 22px;
+      width: 17px;
+      height: 2px;
+      background-color: $color-default-white;
+      box-shadow: 0 10px 0 0 $color-default-white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 22px;
+      width: 12px;
+      height: 2px;
+      background-color: $color-default-white;
+      box-shadow: -5px 5px 0 0 $color-default-white;
+    }
+  }
+}
+
+.header-nav--opened .header-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 20px;
+    width: 20px;
+    height: 2px;
+    background-color: $color-default-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
@@ -102,10 +155,19 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .header__phone a {
   color: $color-default-white;
+}
+
+.header-nav--opened .header__phone a {
+  color: $color-default-black;
 }
 
 .header__hero {

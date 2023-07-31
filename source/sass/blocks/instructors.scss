@@ -4,10 +4,18 @@
 
 .instructors__wrapper {
   padding: 0 0 127px 0;
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .instructors__intro {
-  margin-bottom: 52px;
+  margin-bottom: 47px;
+
+  @include vp-1199 {
+    margin-bottom: 55px;
+  }
 }
 
 .instructors__intro h2 {
@@ -69,6 +77,10 @@
 .instructors__slider {
   position: relative;
   margin-bottom: 49px;
+
+  @include vp-1199 {
+    margin-bottom: 41px;
+  }
 }
 
 .instructors__slider h3 {
@@ -77,6 +89,12 @@
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+
+  @include vp-1199 {
+    margin: 0 0 34px 0;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .instructors__navigation {
@@ -127,10 +145,15 @@
 
 .instructors__item {
   min-height: 377px;
-  padding: 20px 20px 36px;
+  padding: 20px;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   background-color: $color-default-white;
   list-style-type: none;
+
+  @include vp-1199 {
+    min-height: 411px;
+    padding: 15px;
+  }
 }
 
 .instructors__title {

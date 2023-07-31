@@ -3,7 +3,7 @@ const buttonNext = document.querySelector('.features__button--next');
 const buttonPrev = document.querySelector('.features__button--prev');
 
 const initSliderFeatures = () => {
-  if (sliderFeatures) {
+  if (sliderFeatures && innerWidth > 768) {
     // eslint-disable-next-line
     new Swiper(sliderFeatures, {
 

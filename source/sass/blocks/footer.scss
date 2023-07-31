@@ -25,6 +25,8 @@
 
   @include vp-1199 {
     margin-bottom: 37px;
+    flex-wrap: nowrap;
+    gap: 84px;
   }
 
   @include vp-767 {
@@ -51,6 +53,10 @@
 
 .footer__nav {
   min-width: 582px;
+
+  @include vp-1199 {
+    min-width: 471px;
+  }
 }
 
 .footer__nav-list {
@@ -65,7 +71,6 @@
   list-style-type: none;
 
   @include vp-1199 {
-    min-width: 471px;
     gap: 0;
     font-size: 14px;
     line-height: 14px;
