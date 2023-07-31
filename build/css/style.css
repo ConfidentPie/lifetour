@@ -3032,6 +3032,11 @@ button,
   right: -380px;
   z-index: -1;
 }
+@media (max-width: 1199px) {
+  .learning::after {
+    content: none;
+  }
+}
 
 .learning h3 {
   margin: 0 0 45px 0;
@@ -3472,6 +3477,11 @@ button,
   height: 263px;
   top: -30px;
   right: -230px;
+}
+@media (max-width: 1199px) {
+  .features::after, .features::before {
+    content: none;
+  }
 }
 
 .features__wrapper {
@@ -4198,6 +4208,12 @@ button,
 .footer__nav-item:focus a::before {
   display: none;
 }
+@media (max-width: 1199px) {
+  .footer__nav-item::before {
+    width: 100%;
+    left: 0;
+  }
+}
 @media (max-width: 767px) {
   .footer__nav-item {
     margin-bottom: 15px;
@@ -4206,6 +4222,11 @@ button,
 
 .footer__nav-item a {
   padding: 10px;
+}
+@media (max-width: 1199px) {
+  .footer__nav-item a {
+    padding: 0;
+  }
 }
 
 .footer__phone {

@@ -24,6 +24,13 @@
     top: -30px;
     right: -230px;
   }
+
+  @include vp-1199 {
+    &::after,
+    &::before {
+      content: none;
+    }
+  }
 }
 
 
