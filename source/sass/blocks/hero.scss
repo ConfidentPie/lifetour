@@ -20,23 +20,6 @@
   }
 }
 
-.hero__item--caucasus {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url("../../img/hero/caucasus-desktop@1x.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 100px;
-    left: -80px;
-    width: 1440px;
-    height: 808px;
-    z-index: -1;
-  }
-}
-
 .hero__item h2 {
   position: relative;
   margin: 0 0 25px 0;

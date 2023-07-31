@@ -9,6 +9,7 @@ import {initSliderTours} from './modules/sliders/init-tours-slider';
 import {initSliderInstructors} from './modules/sliders/init-instructors-slider';
 import {initSliderReviews} from './modules/sliders/init-reviews-slider';
 import {initSliderFeatures} from './modules/sliders/init-features-slider';
+import {initNavToggle} from './modules/init-nav-toggle';
 
 // ---------------------------------
 
@@ -29,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initNavToggle();
     initVideoPlayer();
     initLeaflet();
     getSlidesTabs();
