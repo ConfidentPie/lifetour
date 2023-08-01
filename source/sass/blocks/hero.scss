@@ -1,3 +1,16 @@
+.hero {
+  width: 100%;
+  min-height: 800px;
+
+  @include vp-1199 {
+    min-height: 1024px;
+  }
+
+  @include vp-767 {
+    min-height: 568px;
+  }
+}
+
 .hero__swiper {
   @include vp-1199 {
     display: flex;
@@ -10,8 +23,40 @@
   padding: 0;
 }
 
+.hero__item-wrapper {
+  position: relative;
+  padding: 182px 15px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 800px;
+
+  @include vp-1199 {
+    position: relative;
+    padding: 174px 30px 90px;
+    max-width: 100%;
+    margin: 0;
+    min-height: 568px;
+  }
+
+  @include vp-767 {
+    padding: 139px 15px 40px;
+  }
+}
+
 .hero__item {
+  position: relative;
+  background-size: cover;
   list-style-type: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $main-slider;
+  }
 
   @include vp-1199 {
     display: flex;
@@ -20,7 +65,38 @@
   }
 }
 
-.hero__item h2 {
+.hero__item--caucasus {
+  background-image: url("../../img/hero/caucasus-desktop@2x.jpg");
+}
+
+.hero__item--kamchatka {
+  background-image: url("../../img/hero/kamchatka-desktop@2x.jpg");
+}
+
+.hero__item--altai {
+  background-image: url("../../img/hero/altai-desktop@2x.jpg");
+}
+
+.hero__item-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 944px;
+  width: fit-content;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    max-width: 670px;
+    width: 100%;
+    align-items: center;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.hero__item-text h2 {
   position: relative;
   margin: 0 0 25px 0;
   padding: 0;
@@ -29,7 +105,7 @@
   font-weight: 800;
   line-height: 77px;
   color: $color-default-white;
-  z-index: 2;
+  z-index: 5;
 
   @include vp-1199 {
     margin: 0 0 15px 0;
@@ -37,9 +113,14 @@
     line-height: 56px;
     text-align: center;
   }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
-.hero__item p {
+.hero__item-text p {
   margin: 0 0 35px 0;
   padding: 0;
   max-width: 464px;
@@ -49,15 +130,24 @@
   color: $color-default-white;
 
   @include vp-1199 {
+    max-width: 462px;
     margin: 0 0 25px 0;
     text-align: center;
   }
+
+  @include vp-767 {
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
-.hero__item a {
+.hero__item-text a {
   display: block;
-  text-align: center;
+  margin-bottom: 150px;
   width: 220px;
+  text-align: center;
   background-color: $color-navy-blue;
   padding: 21px 5px;
   font-size: 16px;
@@ -81,7 +171,13 @@
   @include vp-1199 {
     display: block;
     width: 206px;
-    margin: 0 0 150px;
+    margin: 0 auto 568px;
+  }
+
+  @include vp-767 {
+    min-width: 180px;
+    margin-bottom: 0;
+    padding: 18px;
   }
 }
 
@@ -90,14 +186,22 @@
   width: 482px;
   height: 317px;
   right: 0;
-  bottom: 110px;
+  top: 301px;
   background-color: $color-resolution-blue;
-  z-index: 1;
+  z-index: 4;
 
   @include vp-1199 {
-    position: relative;
+    top: inherit;
+    bottom: 218px;
+    right: 50%;
+    transform: translate(50%, 0);
+    z-index: 1;
     width: 442px;
-    height: 300px;
+    min-height: 300px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -108,6 +212,7 @@
 }
 
 .hero__video-player {
+  position: absolute;
   width: 100%;
   height: 100%;
 
@@ -142,7 +247,7 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background: $color-disabled;
+    background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid $color-default-white;
   }
 }
@@ -152,25 +257,46 @@
   width: 410px;
   height: 459px;
   right: 1px;
-  bottom: 68px;
+  top: 220px;
   z-index: 1;
 
   @include vp-1199 {
-    position: relative;
     width: 442px;
     height: 365px;
+    right: auto;
+    left: 150px;
+    top: auto;
+    bottom: 169px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
-.hero__video img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.hero__audio {
+  position: absolute;
+  top: 301px;
+  right: 0;
+
+  & iframe {
+    width: 340px;
+    height: 220px;
+  }
+
+  @include vp-1199 {
+    top: inherit;
+    bottom: 279px;
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
-
 .hero__item-info {
-  margin-top: 150px;
   display: flex;
   gap: 10px;
 
@@ -192,4 +318,80 @@
   padding-left: 40px;
   border: 1px solid $color-transparent;
   color: $color-default-white;
+}
+
+.swiper .hero__pagination {
+  display: flex;
+  max-width: 100px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  width: fit-content;
+  text-align: end;
+  left: auto;
+  right: 130px;
+  gap: 7px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    bottom: 90px;
+    right: inherit;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    bottom: 40px;
+  }
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid $color-default-white;
+  background-color: transparent;
+  opacity: 1;
+  margin: 0;
+
+  &:not(:disabled):hover {
+    @include hover;
+    border: 1px solid $color-resolution-blue;
+    background-color: transparent;
+  }
+
+  &:not(:disabled):hover svg {
+    stroke: $color-default-black;
+  }
+
+  &:not(:disabled):focus {
+    @include focus;
+    border: 1px solid $color-resolution-blue;
+  }
+
+  &:not(:disabled):focus svg {
+    stroke: $color-default-black;
+  }
+
+  &:not(:disabled):active {
+    @include active;
+    background-color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+  }
+
+  &:disabled {
+    opacity: 10%;
+    cursor: default;
+  }
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: $color-default-white;
 }

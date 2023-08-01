@@ -11,7 +11,7 @@ const initSliderHero = () => {
         el: sliderPagination,
         clickable: true,
       },
-
+      centeredSlides: true,
       slidesPerView: 1,
       spaceBetween: 30,
     });
