@@ -183,15 +183,7 @@
               </div>
               <div class="tours__swiper swiper">
                 <ul class="tours__list swiper-wrapper">
-                  <li class="tours__item swiper-slide">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/caucasus-tablet@1x.webp, img/tours/caucasus-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/caucasus-mobile@1x.webp, img/tours/caucasus-mobile@2x.webp 2x">
-                      <source type="image/webp" srcset="img/tours/caucasus-desktop@1x.webp, img/tours/caucasus-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/caucasus-tablet@1x.jpg, img/tours/caucasus-tablet@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/caucasus-mobile@1x.jpg, img/tours/caucasus-mobile@2x.jpg 2x">
-                      <img src="img/tours/caucasus-desktop@1x.jpg" srcset="img/tours/caucasus-desktop@2x.jpg 2x" width="380" height="412" alt="Фото долины приэльбрусья.">
-                    </picture>
+                  <li class="tours__item tours__item-caucasus swiper-slide">
                     <div class="tours__information">
                       <div class="tours__duration">
                         <p class="tours__location">
@@ -231,15 +223,7 @@
                     </div>
                     </div>
                   </li>
-                  <li class="tours__item swiper-slide">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/altai-tablet@1x.webp, img/tours/altai-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/altai-mobile@1x.webp, img/tours/altai-mobile@2x.webp 2x">
-                      <source type="image/webp" srcset="img/tours/altai-desktop@1x.webp, img/tours/altai-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/altai-tablet@1x.jpg, img/tours/altai-tablet@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/caucasus-mobile@1x.jpg, img/tours/caucasus-mobile@2x.jpg 2x">
-                      <img src="img/tours/altai-desktop@1x.jpg" srcset="img/tours/altai-desktop@2x.jpg 2x" width="380" height="412" alt="Фото алтайских гор с заснеженными вершинами и озером в долине.">
-                    </picture>
+                  <li class="tours__item tours__item-altai swiper-slide">
                     <div class="tours__information">
                       <div class="tours__duration">
                         <p class="tours__location">
@@ -279,15 +263,7 @@
                     </div>
                     </div>
                   </li>
-                  <li class="tours__item swiper-slide">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/adygea-tablet@1x.webp, img/tours/adygea-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/adygea-mobile@1x.webp, img/tours/adygea-mobile@2x.webp 2x">
-                      <source type="image/webp" srcset="img/tours/adygea-desktop@1x.webp, img/tours/adygea-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/adygea-tablet@1x.jpg, img/tours/adygea-tablet@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/adygea-mobile@1x.jpg, img/tours/adygea-mobile@2x.jpg 2x">
-                      <img src="img/tours/adygea-desktop@1x.jpg" srcset="img/tours/adygea-desktop@2x.jpg 2x" width="380" height="412" alt="Фото адыгейских гор и лесами на склонах.">
-                    </picture>
+                  <li class="tours__item tours__item-adygea swiper-slide">
                     <div class="tours__information">
                       <div class="tours__duration">
                         <p class="tours__location">
@@ -327,15 +303,7 @@
                     </div>
                     </div>
                   </li>
-                  <li class="tours__item swiper-slide">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/altai-tablet@1x.webp, img/tours/altai-tablet@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/altai-mobile@1x.webp, img/tours/altai-mobile@2x.webp 2x">
-                      <source type="image/webp" srcset="img/tours/altai-desktop@1x.webp, img/tours/altai-desktop@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/tours/altai-tablet@1x.jpg, img/tours/altai-tablet@2x.jpg 2x">
-                      <source type="image/webp" media="(max-width: 767px)" srcset="img/tours/caucasus-mobile@1x.jpg, img/tours/caucasus-mobile@2x.jpg 2x">
-                      <img src="img/tours/altai-desktop@1x.jpg" srcset="img/tours/altai-desktop@2x.jpg 2x" width="380" height="412" alt="Фото алтайских гор с заснеженными вершинами и озером в долине.">
-                    </picture>
+                  <li class="tours__item tours__item-altai swiper-slide">
                     <div class="tours__information">
                       <div class="tours__duration">
                         <p class="tours__location">
@@ -395,19 +363,21 @@
                 <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
               </div>
               <div class="instructors__slider">
-                <div class="instructors__navigation swiper-navigation">
-                  <button class="instructors__button instructors__button--prev swiper__button--prev" aria-label="Назад.">
-                    <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
-                      <use href="img/sprite.svg#left"></use>
-                    </svg>
-                  </button>
-                  <button class="instructors__button instructors__button--next swiper__button--next" aria-label="Вперед.">
-                    <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
-                      <use href="img/sprite.svg#right"></use>
-                    </svg>
-                  </button>
+                <div class="instructors__header">
+                  <h3>Наши инструкторы</h3>
+                  <div class="instructors__navigation swiper-navigation">
+                    <button class="instructors__button instructors__button--prev swiper__button--prev" aria-label="Назад.">
+                      <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
+                        <use href="img/sprite.svg#left"></use>
+                      </svg>
+                    </button>
+                    <button class="instructors__button instructors__button--next swiper__button--next" aria-label="Вперед.">
+                      <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вперед.">
+                        <use href="img/sprite.svg#right"></use>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                <h3>Наши инструкторы</h3>
                 <div class="instructors__swiper swiper">
                   <ul class="instructors__list swiper-wrapper">
                     <li class="instructors__item swiper-slide">
@@ -521,28 +491,16 @@
               <div class="instructors__learning learning">
                 <h3>Процесс обучения</h3>
                 <ul class="learning__list">
-                  <li class="learning__item">
-                    <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Карта.">
-                      <use href="img/sprite.svg#map"></use>
-                    </svg>
+                  <li class="learning__item learning__item--map">
                     <p>Изучение спортивного туристского движения</p>
                   </li>
-                  <li class="learning__item">
-                    <svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ботинок.">
-                      <use href="img/sprite.svg#boot"></use>
-                    </svg>
+                  <li class="learning__item learning__item--boot">
                     <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
                   </li>
-                  <li class="learning__item">
-                    <svg width="23" height="23" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ели.">
-                      <use href="img/sprite.svg#pine-tree"></use>
-                    </svg>
+                  <li class="learning__item learning__item--trees">
                     <p>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
                   </li>
-                  <li class="learning__item">
-                    <svg width="25" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Горы.">
-                      <use href="img/sprite.svg#mountain"></use>
-                    </svg>
+                  <li class="learning__item learning__item--mountain">
                     <p>Разъяснение сложности горных препятствий</p>
                   </li>
                 </ul>
@@ -862,7 +820,7 @@
                     <a href="#reviews" class="footer__nav-link">Отзывы</a>
                   </li>
                   <li class="footer__nav-item">
-                    <a href="#gallery" class="footer__nav-link">Фото</a>
+                    <a href="#gallery" class="footer__nav-link">Фотографии</a>
                   </li>
                   <li class="footer__nav-item">
                     <a href="#contacts" class="footer__nav-link">Контакты</a>

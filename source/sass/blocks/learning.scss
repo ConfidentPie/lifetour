@@ -33,27 +33,51 @@
     line-height: 18px;
     margin: 0 0 44px 0;
   }
+
+  @include vp-767 {
+    margin: 0 0 30px 0;
+  }
 }
 
 .learning__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 30px;
 
   @include vp-1199 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 91px 76px
   }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 36px;
+    justify-content: flex-start;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: rgba(2, 102, 193, 0.1);
+      width: 1px;
+      height: calc(100% - 80px);
+      left: 8px;
+      bottom: 15px;
+    }
+  }
 }
 
 .learning__item {
+  padding-left: 40px;
   position: relative;
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  gap: 15px;
+  max-width: 277px;
+  padding-left: 40px;
+  padding-bottom: 32px;
 
   &::after {
     position: absolute;
@@ -67,9 +91,77 @@
   }
 
   @include vp-1199 {
+    padding-bottom: 0;
+
     &::after {
       content: none;
     }
+  }
+
+  @include vp-767 {
+    &::after {
+      position: absolute;
+      content: "";
+      width:  13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: $color-navy-blue;
+      top: 50%;
+      left: -34px;
+      transform: translate(0,-50%);
+    }
+  }
+}
+
+.learning__item--map {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    background-image: url("../../img/sprite/map.svg");
+    background-repeat: no-repeat;
+    left: 0;
+  }
+}
+
+.learning__item--boot {
+  &::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    background-image: url("../../img/sprite/boot.svg");
+    background-repeat: no-repeat;
+    left: 0;
+  }
+}
+
+.learning__item--trees {
+  &::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    background-image: url("../../img/sprite/pine-tree.svg");
+    background-repeat: no-repeat;
+    left: 0;
+  }
+}
+
+.learning__item--mountain {
+  &::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    background-image: url("../../img/sprite/mountain.svg");
+    background-repeat: no-repeat;
+    left: 0;
   }
 }
 
@@ -102,9 +194,13 @@
 
   @include vp-1199 {
     background: url("../../img/svg/line-tablet.svg");
-    bottom: 65px;
+    bottom: 55px;
     left: 0;
     width: 368px;
     height: 68px;
+  }
+
+  @include vp-767 {
+    background: none;
   }
 }
