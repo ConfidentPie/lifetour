@@ -137,6 +137,10 @@
       color: $color-default-white;
     }
   }
+
+  &:disabled {
+    opacity: 10%;
+  }
 }
 
 .tours__list {

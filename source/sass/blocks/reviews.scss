@@ -84,6 +84,10 @@
       color: $color-default-white;
     }
   }
+
+  &:disabled {
+    opacity: 10%;
+  }
 }
 
 .reviews__swiper {

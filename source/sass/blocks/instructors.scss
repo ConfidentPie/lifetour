@@ -131,9 +131,10 @@
       color: $color-default-white;
     }
   }
-}
 
-.instructors__swiper {
+  &:disabled {
+    opacity: 10%;
+  }
 }
 
 .instructors__list {

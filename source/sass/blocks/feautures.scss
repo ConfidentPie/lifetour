@@ -162,6 +162,10 @@
       color: $color-default-white;
     }
   }
+
+  &:disabled {
+    opacity: 10%;
+  }
 }
 
 .features__item h3 {

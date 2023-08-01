@@ -69,4 +69,8 @@
       color: $color-default-white;
     }
   }
+
+  &:disabled {
+    opacity: 10%;
+  }
 }

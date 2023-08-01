@@ -22,63 +22,53 @@
       <header class="header">
         <div class="container">
           <div class="header__wrapper">
-            <div class="header__nav-wrapper">
-              <h1 class="visually-hidden">LifeTour. Организация походов в горы</h1>
-              <a href="#" class="header__logo">
-                <img src="img/logo.svg" width="205" height="62" alt="Логотип LifeTour, Организация походов в горы">
-              </a>
-              <nav class="header__nav header__nav--opened header__nav--nojs">
-                <button class="header__nav-toggle" type="button">
-                  <span class="visually-hidden">Управление отображением меню</span>
-                </button>
-                <ul class="header__nav-list">
-                  <li class="header__nav-item">
-                    <a href="#tours" class="header__nav-link">Туры</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a href="#instructors" class="header__nav-link">Обучение</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a href="#about" class="header__nav-link">О нас</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a href="#reviews" class="header__nav-link">Отзывы</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a href="#gallery" class="header__nav-link">Фото</a>
-                  </li>
-                  <li class="header__nav-item">
-                    <a href="#contacts" class="header__nav-link">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="header__phone">
-                <a href="tel:+78007253232">8 800 725 32 32</a>
-              </div>
+            <h1 class="visually-hidden">LifeTour. Организация походов в горы</h1>
+            <nav class="header__nav header__nav--nojs">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#tours" class="header__nav-link">Туры</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#instructors" class="header__nav-link">Обучение</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#about" class="header__nav-link">О нас</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#reviews" class="header__nav-link">Отзывы</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#gallery" class="header__nav-link">Фотографии</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#contacts" class="header__nav-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__logo" href="index.html">
+              <svg width="205" height="62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="header__phone">
+              <a href="tel:+78007253232">8 800 725 32 32</a>
             </div>
-            <div class="header__hero">
-              <div class="header__hero-wrapper hero">
-                <div class="hero__swiper swiper">
-                  <ul class="hero__list swiper-wrapper">
-                    <li class="hero__item hero__item--caucasus swiper-slide">
+            <button class="header__nav-toggle" type="button">
+              <span class="visually-hidden">Управление отображением меню</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+            <div class="hero__swiper swiper">
+              <ul class="hero__list swiper-wrapper">
+                <li class="hero__item hero__item--caucasus swiper-slide">
+                  <div class="hero__item-wrapper">
+                    <div class="hero__item-text">
                       <h2>Захватывающие вершины Кавказа</h2>
                       <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
                       <a href="#">Смотреть тур</a>
-                      <div class="hero__video">
-                        <picture>
-                          <source type="imge/webp" media="(max-width: 1199px)" srcset="./img/hero/cover-tablet@1x.wepb 1x, ./img/hero/cover-tablet@2x.wepb 2x">
-                          <source type="imge/webp" srcset="./img/hero/cover-desktop@1x.wepb 1x, ./img/hero/cover-desktop@2x.wepb 2x">
-
-                          <source media="(max-width: 1199px)" srcset="./img/hero/cover-tablet@1x.jpg 1x, ./img/hero/cover-tablet@2x.jpg 2x">
-                          <img src="./img/hero/cover-desktop@1x.jpg" srcset="./img/hero/cover-desktop@2x.jpg 2x" width="482" height="317" alt="Обложка промо-видео.">
-
-                        </picture>
-                        <button class="hero__video-button">
-                          <svg width="17" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="запустить видео.">
-                            <use href="img/sprite.svg#play"></use>
-                          </svg>
-                        </button>
-                      </div>
                       <div class="hero__item-info">
                         <span>
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Продолжительность.">
@@ -93,21 +83,31 @@
                           Высокая сложность
                         </span>
                       </div>
-                    </li>
-                    <li class="hero__item hero__item--kamchatka swiper-slide">
+                    </div>
+                    <div class="hero__video">
+                      <picture>
+                        <source type="imge/webp" media="(max-width: 1199px)" srcset="./img/hero/cover-tablet@1x.wepb 1x, ./img/hero/cover-tablet@2x.wepb 2x">
+                        <source type="imge/webp" srcset="./img/hero/cover-desktop@1x.wepb 1x, ./img/hero/cover-desktop@2x.wepb 2x">
+
+                        <source media="(max-width: 1199px)" srcset="./img/hero/cover-tablet@1x.jpg 1x, ./img/hero/cover-tablet@2x.jpg 2x">
+                        <img src="./img/hero/cover-desktop@1x.jpg" srcset="./img/hero/cover-desktop@2x.jpg 2x" width="482" height="317" alt="Обложка промо-видео.">
+
+                      </picture>
+                      <button class="hero__video-button">
+                        <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="запустить видео.">
+                          <use href="img/sprite.svg#play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="hero__pagination swiper-pagination"></div>
+                  </div>
+                </li>
+                <li class="hero__item hero__item--kamchatka swiper-slide">
+                  <div class="hero__item-wrapper">
+                    <div class="hero__item-text">
                       <h2>Невероятная природа Камчатки</h2>
                       <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
                       <a href="#">Смотреть тур</a>
-                      <div class="hero__polaroid">
-                        <picture>
-                          <source type="imge/webp" media="(max-width: 1199px)" srcset="./img/hero/cards-tablet@1x.wepb 1x, ./img/hero/cards-tablet@2x.wepb 2x">
-                          <source type="imge/webp" srcset="./img/hero/cards-desktop@1x.wepb 1x, ./img/hero/cards-desktop@2x.wepb 2x">
-
-                          <source media="(max-width: 1199px)" srcset="./img/hero/cards-tablet@1x.png 1x, ./img/hero/cards-tablet@2x.png 2x">
-                          <img src="./img/hero/cards-desktop@1x.png" srcset="./img/hero/cards-desktop@2x.png 2x" width="410" height="459" alt="Обложка промо-видео.">
-
-                        </picture>
-                      </div>
                       <div class="hero__item-info">
                         <span>
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Продолжительность.">
@@ -120,36 +120,51 @@
                           </svg>Средняя сложность
                         </span>
                       </div>
-                    </li>
-                    <li class="hero__item hero__item--altai swiper-slide">
+                    </div>
+                    <div class="hero__polaroid">
+                      <picture>
+                        <source type="imge/webp" media="(max-width: 1199px)" srcset="./img/hero/cards-tablet@1x.wepb 1x, ./img/hero/cards-tablet@2x.wepb 2x">
+                        <source type="imge/webp" srcset="./img/hero/cards-desktop@1x.wepb 1x, ./img/hero/cards-desktop@2x.wepb 2x">
+
+                        <source media="(max-width: 1199px)" srcset="./img/hero/cards-tablet@1x.png 1x, ./img/hero/cards-tablet@2x.png 2x">
+                        <img src="./img/hero/cards-desktop@1x.png" srcset="./img/hero/cards-desktop@2x.png 2x" width="410" height="459" alt="Обложка промо-видео.">
+
+                      </picture>
+                    </div>
+                    <div class="hero__pagination swiper-pagination"></div>
+                  </div>
+                </li>
+                <li class="hero__item hero__item--altai swiper-slide">
+                  <div class="hero__item-wrapper">
+                    <div class="hero__item-text">
                       <h2>Магические пейзажи Алтайского Края</h2>
                       <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                       <a href="#">Смотреть тур</a>
-                      <div class="hero__audio">
-
-                      </div>
                       <div class="hero__item-info">
-                        <span>
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Продолжительность.">
-                            <use href="img/sprite.svg#moon"></use>
-                          </svg>8 дней/7 ночей
-                        </span>
-                        <span>
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сложность.">
-                            <use href="img/sprite.svg#level"></use>
-                          </svg>Легкая сложность сложность
-                        </span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
+                      <span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Продолжительность.">
+                          <use href="img/sprite.svg#moon"></use>
+                        </svg>8 дней/7 ночей
+                      </span>
+                      <span>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Сложность.">
+                          <use href="img/sprite.svg#level"></use>
+                        </svg>Легкая сложность сложность
+                      </span>
+                    </div>
+                    </div>
+                    <div class="hero__audio">
+                      <iframe frameborder="0" style="border:none;width:340px;height:220px;" width="340" height="220"
+                    src="https://music.yandex.ru/iframe/#track/112912322/25474374">Слушайте <a
+                      href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
+                      фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
+                    </div>
+                    <div class="hero__pagination swiper-pagination"></div>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-      </header>
-      <main>
+        </section>
         <section class="tours" id="tours">
           <div class="container">
             <div class="tours__wrapper">
