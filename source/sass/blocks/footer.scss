@@ -3,35 +3,43 @@
 }
 
 .footer__wrapper {
-  padding: 31px 0 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @include vp-1199 {
     padding: 44px 0 40px;
+    max-width: 100%;
   }
 
   @include vp-767 {
-    display: flex;
-    flex-direction: column;
+    padding: 30px 0;
+    max-width: 100%;
+    align-items: flex-start;
+    margin: 0 auto;
   }
 }
 
 .footer__nav-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  width: 100%;
   margin-bottom: 16px;
+  display: flex;
   align-items: center;
+  cursor: pointer;
   justify-content: space-between;
 
   @include vp-1199 {
     margin-bottom: 37px;
-    flex-wrap: nowrap;
-    gap: 84px;
   }
 
   @include vp-767 {
     margin-bottom: 30px;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
   }
 }
 
@@ -56,6 +64,13 @@
 
   @include vp-1199 {
     min-width: 471px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
   }
 }
 
@@ -112,7 +127,8 @@
     }
   }
 
-  &:focus a {
+  &:not(:disabled):focus {
+    @include focus;
     outline: solid 1px $color-elephant;
 
     &::before {
@@ -129,11 +145,21 @@
 
   @include vp-767 {
     margin-bottom: 15px;
+    width: fit-content;
+
+    &::before {
+      width: 100%;
+    }
   }
 }
 
 .footer__nav-item a {
   padding: 10px;
+
+  &:not(:disabled):focus {
+    @include focus;
+    outline: 1px solid $color-elephant;
+  }
 
   @include vp-1199 {
     padding: 0;

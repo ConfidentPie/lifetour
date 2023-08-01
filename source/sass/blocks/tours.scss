@@ -55,6 +55,7 @@
 }
 
 .tours__title {
+  width: fit-content;
   position: relative;
   margin: 0 0 58px 0;
   padding: 0;
@@ -88,6 +89,7 @@
   }
 
   @include vp-767 {
+    max-width: 156px;
     margin: 0 0 28px 0;
     font-size: 22px;
     line-height: 22px;
@@ -106,6 +108,10 @@
 
   @include vp-1199 {
     top: 55px;
+  }
+
+  @include vp-767 {
+    top: 65px;
   }
 }
 
@@ -152,7 +158,36 @@
 .tours__item {
   position: relative;
   list-style-type: none;
+  min-height: 412px;
+  max-width: 380px;
+
+  @include vp-1199 {
+    min-width: 324px;
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
+
+.tours__item-caucasus {
+  background: url("../../img/tours/caucasus-desktop@2x.webp");
+  background-size: cover;
+}
+
+.tours__item-altai {
+  background: url("../../img/tours/altai-desktop@2x.webp");
+  background-size: cover;
+}
+
+
+.tours__item-adygea {
+  background: url("../../img/tours/adygea-desktop@2x.webp");
+  background-size: cover;
+}
+
 
 .tours__information {
   position: absolute;

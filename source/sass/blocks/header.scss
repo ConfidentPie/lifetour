@@ -176,6 +176,11 @@
   .header__nav-item a {
     color: $color-default-white;
 
+    &:not(:disabled):focus {
+      @include focus;
+      outline: 1px solid $color-default-white;
+    }
+
     @include vp-1199 {
       color: $color-default-black;
     }
