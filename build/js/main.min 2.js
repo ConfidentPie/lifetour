@@ -821,8 +821,6 @@ var nav = document.querySelector('.header__nav');
 var toggle = document.querySelector('.header__nav-toggle');
 var initNavToggle = function initNavToggle() {
   nav.classList.remove('header__nav--nojs');
-  nav.classList.remove('header__nav--opened');
-  nav.classList.add('header__nav--closed');
   toggle.addEventListener('click', function () {
     if (nav.classList.contains('header__nav--opened')) {
       nav.classList.remove('header__nav--opened');
@@ -1203,6 +1201,7 @@ var initSliderHero = function initSliderHero() {
         el: sliderPagination,
         clickable: true
       },
+      centeredSlides: true,
       slidesPerView: 1,
       spaceBetween: 30
     });
@@ -1267,12 +1266,14 @@ var initSliderReviews = function initSliderReviews() {
       },
       breakpoints: {
         1200: {
-          slidesPerView: 1.5,
+          centeredSlides: true,
+          slidesPerView: 'auto',
           spaceBetween: 30
         },
         768: {
-          slidesPerView: 1.20,
-          spaceBetween: 30
+          slidesPerView: 'auto',
+          spaceBetween: 30,
+          initialSlide: 0
         },
         320: {
           slidesPerView: 1,

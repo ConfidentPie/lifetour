@@ -15,13 +15,15 @@ const initSliderReviews = () => {
 
       breakpoints: {
         1200: {
-          slidesPerView: 1.5,
+          centeredSlides: true,
+          slidesPerView: 'auto',
           spaceBetween: 30,
         },
 
         768: {
-          slidesPerView: 1.20,
+          slidesPerView: 'auto',
           spaceBetween: 30,
+          initialSlide: 0,
         },
 
         320: {
