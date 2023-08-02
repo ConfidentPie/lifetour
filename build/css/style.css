@@ -2115,9 +2115,21 @@ button,
 }
 
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
-  z-index: 2;
+  min-height: 800px;
+  background-image: url("../../img/hero/caucasus-desktop@2x.webp");
+  background-size: cover;
+}
+@media (max-width: 1199px) {
+  .header {
+    min-height: 1024px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    min-height: 568px;
+  }
 }
 
 .header__wrapper {
@@ -2132,6 +2144,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 3;
 }
 @media (max-width: 1199px) {
   .header__wrapper {
@@ -2551,7 +2564,6 @@ button,
 }
 .hero {
   width: 100%;
-  min-height: 800px;
 }
 @media (max-width: 1199px) {
   .hero {
@@ -2582,23 +2594,21 @@ button,
 
 .hero__item-wrapper {
   position: relative;
-  padding: 182px 15px 80px;
+  padding: 80px 15px 0;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 800px;
 }
 @media (max-width: 1199px) {
   .hero__item-wrapper {
     position: relative;
-    padding: 174px 30px 90px;
+    padding: 100px 30px 90px;
     max-width: 100%;
     margin: 0;
-    min-height: 568px;
   }
 }
 @media (max-width: 767px) {
   .hero__item-wrapper {
-    padding: 139px 15px 40px;
+    padding: 70px 15px 40px;
   }
 }
 
@@ -2614,7 +2624,6 @@ button,
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
 }
 @media (max-width: 1199px) {
   .hero__item {
@@ -2629,18 +2638,6 @@ button,
         -ms-flex-align: center;
             align-items: center;
   }
-}
-
-.hero__item--caucasus {
-  background-image: url("../../img/hero/caucasus-desktop@2x.jpg");
-}
-
-.hero__item--kamchatka {
-  background-image: url("../../img/hero/kamchatka-desktop@2x.jpg");
-}
-
-.hero__item--altai {
-  background-image: url("../../img/hero/altai-desktop@2x.jpg");
 }
 
 .hero__item-text {
@@ -2766,7 +2763,7 @@ button,
   width: 482px;
   height: 317px;
   right: 0;
-  top: 301px;
+  top: 200px;
   background-color: #1c3374;
   z-index: 4;
 }
@@ -2844,7 +2841,7 @@ button,
   width: 410px;
   height: 459px;
   right: 1px;
-  top: 220px;
+  top: 120px;
   z-index: 1;
 }
 @media (max-width: 1199px) {
@@ -2865,7 +2862,7 @@ button,
 
 .hero__audio {
   position: absolute;
-  top: 301px;
+  top: 200px;
   right: 0;
 }
 .hero__audio iframe {
@@ -2922,7 +2919,7 @@ button,
   max-width: 100px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -3045,12 +3042,25 @@ button,
   }
 }
 
+.tours__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 30px;
+}
+
 .tours__title {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
-  margin: 0 0 58px 0;
+  margin: 0;
   padding: 0;
   font-size: 35px;
   line-height: 35px;
@@ -3058,6 +3068,7 @@ button,
 }
 .tours__title::after {
   content: attr(data-text);
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3089,22 +3100,6 @@ button,
   .tours__title::after {
     font-size: 26px;
     line-height: 26px;
-  }
-}
-
-.tours__navigation {
-  position: absolute;
-  right: 0;
-  top: 104px;
-}
-@media (max-width: 1199px) {
-  .tours__navigation {
-    top: 55px;
-  }
-}
-@media (max-width: 767px) {
-  .tours__navigation {
-    top: 65px;
   }
 }
 

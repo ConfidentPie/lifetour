@@ -57,10 +57,7 @@
               <span class="visually-hidden">Управление отображением меню</span>
             </button>
           </div>
-        </div>
-      </header>
-      <main>
-        <section class="hero">
+          <div class="header__hero hero">
             <div class="hero__swiper swiper">
               <ul class="hero__list swiper-wrapper">
                 <li class="hero__item hero__item--caucasus swiper-slide">
@@ -99,7 +96,6 @@
                         </svg>
                       </button>
                     </div>
-                    <div class="hero__pagination swiper-pagination"></div>
                   </div>
                 </li>
                 <li class="hero__item hero__item--kamchatka swiper-slide">
@@ -131,7 +127,6 @@
 
                       </picture>
                     </div>
-                    <div class="hero__pagination swiper-pagination"></div>
                   </div>
                 </li>
                 <li class="hero__item hero__item--altai swiper-slide">
@@ -159,16 +154,20 @@
                       href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
                       фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
                     </div>
-                    <div class="hero__pagination swiper-pagination"></div>
                   </div>
                 </li>
               </ul>
+              <div class="hero__pagination swiper-pagination"></div>
             </div>
-        </section>
+          </div>
+        </div>
+      </header>
+      <main>
         <section class="tours" id="tours">
           <div class="container">
             <div class="tours__wrapper">
-              <h2 class="tours__title" data-text="Ближайшие туры">Ближайшие туры</h2>
+              <div class="tours__container">
+                <h2 class="tours__title" data-text="Ближайшие туры">Ближайшие туры</h2>
               <div class="tours__navigation swiper-navigation">
                 <button class="tours__button tours__button--prev" aria-label="Назад.">
                   <svg width="14" height="8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Назад.">
@@ -181,6 +180,8 @@
                   </svg>
                 </button>
               </div>
+              </div>
+
               <div class="tours__swiper swiper">
                 <ul class="tours__list swiper-wrapper">
                   <li class="tours__item tours__item-caucasus swiper-slide">
