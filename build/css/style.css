@@ -2118,6 +2118,8 @@ button,
   position: relative;
   width: 100%;
   min-height: 800px;
+  background-image: url("../../img/hero/caucasus-desktop@2x.webp");
+  background-size: cover;
 }
 @media (max-width: 1199px) {
   .header {
@@ -2917,7 +2919,7 @@ button,
   max-width: 100px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -3040,12 +3042,25 @@ button,
   }
 }
 
+.tours__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 30px;
+}
+
 .tours__title {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
-  margin: 0 0 58px 0;
+  margin: 0;
   padding: 0;
   font-size: 35px;
   line-height: 35px;
@@ -3053,6 +3068,7 @@ button,
 }
 .tours__title::after {
   content: attr(data-text);
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3084,22 +3100,6 @@ button,
   .tours__title::after {
     font-size: 26px;
     line-height: 26px;
-  }
-}
-
-.tours__navigation {
-  position: absolute;
-  right: 0;
-  top: 104px;
-}
-@media (max-width: 1199px) {
-  .tours__navigation {
-    top: 55px;
-  }
-}
-@media (max-width: 767px) {
-  .tours__navigation {
-    top: 65px;
   }
 }
 
