@@ -1,41 +1,36 @@
-const sliderInstructors = document.querySelector('.gallery__swiper');
+const sliderGallery = document.querySelector('.gallery__swiper');
 const buttonNext = document.querySelector('.gallery__button--next');
 const buttonPrev = document.querySelector('.gallery__button--prev');
 
 
-const initSliderInstructors = () => {
-  if (sliderInstructors) {
+const initSliderGallery = () => {
+  if (sliderGallery) {
     // eslint-disable-next-line
-    new Swiper(sliderInstructors, {
-
+    new Swiper(sliderGallery, {
+      slidesPerView: 'auto',
+      spaceBetween: 5,
       navigation: {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
+      // breakpoints: {
+      //   1200: {
+      //     slidesPerView: 4,
+      //     spaceBetween: 30,
+      //   },
 
-      grid: {
-        rows: 2,
-        colums: 2,
-      },
+      //   768: {
+      //     slidesPerView: 3,
+      //     spaceBetween: 30,
+      //   },
 
-      breakpoints: {
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-      },
+      //   320: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 20,
+      //   },
+      // },
     });
   }
 };
 
-export {initSliderInstructors};
+export {initSliderGallery};
