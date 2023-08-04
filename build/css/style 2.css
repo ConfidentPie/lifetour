@@ -2809,7 +2809,6 @@ button,
 .hero__video-button {
   position: absolute;
   padding: 0;
-  position: absolute;
   content: "";
   width: 56px;
   height: 56px;
@@ -2932,7 +2931,7 @@ button,
 }
 @media (max-width: 1199px) {
   .swiper .hero__pagination {
-    margin-bottom: 0;
+    margin: 0 auto;
     width: 100%;
     max-width: 100%;
     text-align: center;
@@ -2942,7 +2941,6 @@ button,
     left: 0;
     bottom: 146px;
     right: inherit;
-    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
@@ -3608,11 +3606,10 @@ button,
 }
 
 .learning__item {
-  padding-left: 40px;
-  position: relative;
   max-width: 277px;
   padding-left: 40px;
   padding-bottom: 32px;
+  position: relative;
 }
 .learning__item::after {
   position: absolute;
@@ -3792,7 +3789,6 @@ button,
     padding: 35px 0;
     max-width: 100%;
     margin: 0;
-    min-height: auto;
     min-height: 461px;
   }
 }
