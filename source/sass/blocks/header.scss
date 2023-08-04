@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 800px;
-  background-image: url('../../img/hero/caucasus-desktop@2x.webp');
+  background-image: url("../../img/hero/caucasus-desktop@2x.webp");
   background-size: cover;
 
   @include vp-1199 {
@@ -181,17 +181,17 @@
   }
 }
 
-  .header__nav-item a {
-    color: $color-default-white;
+.header__nav-item a {
+  color: $color-default-white;
 
-    &:not(:disabled):focus {
-      @include focus;
-      outline: 1px solid $color-default-white;
-    }
+  &:not(:disabled):focus {
+    @include focus;
+    outline: 1px solid $color-default-white;
+  }
 
-    @include vp-1199 {
-      color: $color-default-black;
-    }
+  @include vp-1199 {
+    color: $color-default-black;
+  }
 }
 
 .header__phone {

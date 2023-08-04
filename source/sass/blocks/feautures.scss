@@ -99,7 +99,6 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-
 }
 
 .features__item {
@@ -195,6 +194,6 @@
   text-align: center;
 
   @include vp-1199 {
-    display:  none;
+    display: none;
   }
 }
