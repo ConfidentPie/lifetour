@@ -14,7 +14,7 @@
   margin-bottom: 35px;
 
   @include vp-1199 {
-    margin-bottom: 55px;
+    margin-bottom: 47.5px;
   }
 }
 
@@ -40,7 +40,7 @@
   }
 
   @include vp-1199 {
-    margin: 0 0 26px 0;
+    margin: 0 0 21px;
     font-size: 25px;
     line-height: 25px;
 
@@ -86,7 +86,7 @@
   margin-bottom: 36px;
 
   @include vp-1199 {
-    margin-bottom: 41px;
+    margin-bottom: 29px;
   }
 }
 
@@ -107,13 +107,17 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 7px;
+
+  @include vp-1199 {
+    margin-bottom: 0.5px;
+  }
 }
 
-// .instructors__navigation {
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-// }
+.instructors__navigation {
+  @include vp-1199 {
+    padding-right: 2px;
+  }
+}
 
 .instructors__button {
   width: 37px;
@@ -208,7 +212,7 @@
 
 .instructors__text p {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 17px;
   font-weight: 400;
   margin: 0;
 }

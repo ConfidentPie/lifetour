@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 0 25px;
+
+ @include vp-1199 {
+  padding: 83px 0 27px;
+ }
 }
 
 .reviews__wrapper h2 {
@@ -52,6 +56,11 @@
   position: absolute;
   top: -14px;
   right: 0;
+
+  @include vp-1199 {
+    padding-right: 2px;
+    top: 67px;
+  }
 }
 
 .reviews__list {
@@ -180,6 +189,10 @@
 
 .reviews__text span {
   margin-bottom: 24px;
+
+  @include vp-1199 {
+    margin-bottom: 25px;
+  }
 }
 
 .reviews__author {

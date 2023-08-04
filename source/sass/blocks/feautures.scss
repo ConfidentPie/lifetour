@@ -38,7 +38,7 @@
   padding: 0 0 130px 0;
 
   @include vp-1199 {
-    padding: 0 0 70px 0;
+    padding: 18px 0 87px;
   }
 }
 
@@ -65,7 +65,7 @@
   }
 
   @include vp-1199 {
-    margin: 0 0 30px 0;
+    margin: 0 0 47px 0;
     font-size: 25px;
     line-height: 25px;
 
@@ -97,7 +97,8 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
+    gap: 27px;
   }
 }
 
@@ -112,7 +113,7 @@
   border: 1px solid $color-disabled;
 
   @include vp-1199 {
-    margin: 0 auto;
+    margin: 0;
     flex-basis: 50%;
     max-width: 324px;
     height: auto;
@@ -179,7 +180,9 @@
   margin: 34px 0 15px;
 
   @include vp-1199 {
-    margin: 25px 0 15px;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 25.5px 0 15px;
   }
 }
 
