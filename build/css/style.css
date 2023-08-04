@@ -1625,7 +1625,7 @@ button,
 .custom-input label textarea,
 .custom-textarea label input,
 .custom-textarea label textarea {
-    padding: 18px 15px;
+    padding: 17px 15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2685,7 +2685,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__item-text h2 {
-    margin: 0 0 15px 0;
+    margin: 0 0 13px 0;
     font-size: 56px;
     line-height: 56px;
     text-align: center;
@@ -2710,7 +2710,7 @@ button,
 @media (max-width: 1199px) {
   .hero__item-text p {
     max-width: 462px;
-    margin: 0 0 25px 0;
+    margin: 0 0 27px 0;
     text-align: center;
   }
 }
@@ -3035,10 +3035,10 @@ button,
 }
 @media (max-width: 1199px) {
   .tours__wrapper {
-    padding: 85px 0 70px;
+    padding: 83px 0 86px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .tours__wrapper {
     padding: 60px 0;
   }
@@ -3054,7 +3054,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 0 55px;
+  padding: 0 0 38px;
 }
 
 .tours__title {
@@ -3102,6 +3102,12 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .tours__navigation {
+    padding-right: 2px;
+  }
+}
+
 .tours__button {
   width: 37px;
   height: 35px;
@@ -3127,6 +3133,10 @@ button,
 }
 .tours__button:disabled {
   opacity: 10%;
+}
+
+.tours__swiper {
+  padding: 0 7px 0;
 }
 
 .tours__list {
@@ -3326,7 +3336,7 @@ button,
 }
 @media (max-width: 1199px) {
   .instructors__intro {
-    margin-bottom: 55px;
+    margin-bottom: 47.5px;
   }
 }
 
@@ -3352,7 +3362,7 @@ button,
 }
 @media (max-width: 1199px) {
   .instructors__intro h2 {
-    margin: 0 0 26px 0;
+    margin: 0 0 21px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -3400,7 +3410,7 @@ button,
 }
 @media (max-width: 1199px) {
   .instructors__slider {
-    margin-bottom: 41px;
+    margin-bottom: 29px;
   }
 }
 
@@ -3428,6 +3438,17 @@ button,
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 7px;
+}
+@media (max-width: 1199px) {
+  .instructors__header {
+    margin-bottom: 0.5px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .instructors__navigation {
+    padding-right: 2px;
+  }
 }
 
 .instructors__button {
@@ -3525,7 +3546,7 @@ button,
 
 .instructors__text p {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 17px;
   font-weight: 400;
   margin: 0;
 }
@@ -3561,7 +3582,7 @@ button,
   .learning h3 {
     font-size: 18px;
     line-height: 18px;
-    margin: 0 0 44px 0;
+    margin: 0 0 40px;
   }
 }
 @media (max-width: 767px) {
@@ -3589,7 +3610,7 @@ button,
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    gap: 91px 76px;
+    gap: 90px 28px;
   }
 }
 @media (max-width: 767px) {
@@ -3769,7 +3790,7 @@ button,
     background-size: contain;
     width: 685px;
     height: 402px;
-    top: 0;
+    top: 98px;
     left: 0;
     background-image: url("../../img/about/background-tablet@1x.webp");
   }
@@ -3799,7 +3820,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about__wrapper {
-    padding: 35px 0;
+    padding: 90px 0 0 30px;
     max-width: 100%;
     margin: 0;
     min-height: 461px;
@@ -3821,6 +3842,11 @@ button,
           flex-direction: column;
   padding-left: 51%;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .about__text {
+    padding-left: 50%;
+  }
 }
 @media (max-width: 767px) {
   .about__text {
@@ -3895,6 +3921,12 @@ button,
   margin: 0 0 30px 0;
   padding: 0;
 }
+@media (max-width: 1199px) {
+  .about__history p,
+.about__mission p {
+    margin: 0 0 7px 0;
+  }
+}
 
 .reviews__wrapper {
   position: relative;
@@ -3908,6 +3940,11 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 0 25px;
+}
+@media (max-width: 1199px) {
+  .reviews__wrapper {
+    padding: 83px 0 27px;
+  }
 }
 
 .reviews__wrapper h2 {
@@ -3955,6 +3992,12 @@ button,
   position: absolute;
   top: -14px;
   right: 0;
+}
+@media (max-width: 1199px) {
+  .reviews__navigation {
+    padding-right: 2px;
+    top: 67px;
+  }
 }
 
 .reviews__list {
@@ -4096,6 +4139,11 @@ button,
 .reviews__text span {
   margin-bottom: 24px;
 }
+@media (max-width: 1199px) {
+  .reviews__text span {
+    margin-bottom: 25px;
+  }
+}
 
 .reviews__author {
   margin: 0;
@@ -4160,7 +4208,7 @@ button,
 }
 @media (max-width: 1199px) {
   .features__wrapper {
-    padding: 0 0 70px 0;
+    padding: 18px 0 87px;
   }
 }
 
@@ -4187,7 +4235,7 @@ button,
 }
 @media (max-width: 1199px) {
   .features__wrapper h2 {
-    margin: 0 0 30px 0;
+    margin: 0 0 47px 0;
     font-size: 25px;
     line-height: 25px;
   }
@@ -4222,7 +4270,10 @@ button,
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 27px;
   }
 }
 
@@ -4245,7 +4296,7 @@ button,
 }
 @media (max-width: 1199px) {
   .features__item {
-    margin: 0 auto;
+    margin: 0;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     max-width: 324px;
@@ -4311,7 +4362,9 @@ button,
 }
 @media (max-width: 1199px) {
   .features__item h3 {
-    margin: 25px 0 15px;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 25.5px 0 15px;
   }
 }
 
@@ -4359,7 +4412,7 @@ button,
 }
 @media (max-width: 1199px) {
   .gallery h2 {
-    margin: 0 0 26px 0;
+    margin: 0 0 22.5px 0;
     font-size: 25px;
     line-height: 25px;
   }
@@ -4430,6 +4483,12 @@ button,
     width: 100%;
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .gallery__navigation {
+    padding-right: 2px;
   }
 }
 
@@ -4552,7 +4611,7 @@ button,
 }
 @media (max-width: 1199px) {
   .feedback__wrapper {
-    padding: 192px 0 183px;
+    padding: 195px 0 183px;
   }
 }
 @media (max-width: 767px) {
@@ -4571,7 +4630,8 @@ button,
 }
 @media (max-width: 1199px) {
   .feedback__title {
-    margin: 0 0 15px 0;
+    padding-right: 2px;
+    margin: 0 0 19px 0;
     font-size: 25px;
     line-height: 25px;
   }
@@ -4593,6 +4653,7 @@ button,
 }
 @media (max-width: 1199px) {
   .feedback__wrapper p {
+    padding: 0;
     max-width: 295px;
     margin: 0 0 30px 0;
   }
@@ -4661,6 +4722,7 @@ button,
 @media (max-width: 1199px) {
   .form__button {
     width: 100%;
+    padding: 21px 9px;
   }
 }
 
@@ -4677,12 +4739,12 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 70px 0;
+    padding: 87.5px 0 69px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 40px;
+    gap: 31px;
   }
 }
 @media (max-width: 767px) {
@@ -4719,7 +4781,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts__wrapper h2 {
-    margin: 0 0 20px 0;
+    margin: 0 0 18px 0;
     font-size: 25px;
     line-height: 25px;
   }
@@ -4741,12 +4803,13 @@ button,
 }
 
 .contacts__text {
-  margin: 0 0 50px 0;
+  margin: 0 0 50px;
   font-size: 16px;
   line-height: 24px;
 }
 @media (max-width: 1199px) {
   .contacts__text {
+    margin: 0 0 39px;
     padding-right: 195px;
   }
 }
@@ -4800,6 +4863,7 @@ button,
 @media (max-width: 1199px) {
   .contacts__info dd,
 .contacts__info dt {
+    margin: 0 0 6.5px;
     padding-left: 34px;
   }
 }
@@ -4892,7 +4956,7 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__wrapper {
-    padding: 44px 0 40px;
+    padding: 42px 0 40px;
     max-width: 100%;
   }
 }
@@ -4923,7 +4987,7 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__nav-wrapper {
-    margin-bottom: 37px;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -4960,6 +5024,7 @@ button,
 @media (max-width: 1199px) {
   .footer__nav {
     min-width: 471px;
+    padding-right: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -4993,7 +5058,7 @@ button,
 }
 @media (max-width: 1199px) {
   .footer__nav-list {
-    gap: 0;
+    gap: 20px;
     font-size: 14px;
     line-height: 14px;
   }

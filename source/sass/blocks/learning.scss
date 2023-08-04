@@ -31,7 +31,7 @@
   @include vp-1199 {
     font-size: 18px;
     line-height: 18px;
-    margin: 0 0 44px 0;
+    margin: 0 0 40px;
   }
 
   @include vp-767 {
@@ -50,7 +50,7 @@
   @include vp-1199 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 91px 76px;
+    gap: 90px 28px;
   }
 
   @include vp-767 {
