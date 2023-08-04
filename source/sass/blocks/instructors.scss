@@ -3,7 +3,7 @@
 }
 
 .instructors__wrapper {
-  padding: 0 0 127px 0;
+  padding: 0 0 44px 0;
 
   @include vp-1199 {
     padding: 0;
@@ -11,7 +11,7 @@
 }
 
 .instructors__intro {
-  margin-bottom: 47px;
+  margin-bottom: 35px;
 
   @include vp-1199 {
     margin-bottom: 55px;
@@ -20,7 +20,7 @@
 
 .instructors__intro h2 {
   position: relative;
-  margin: 0 0 38px 0;
+  margin: 0 0 32px 0;
   padding: 0;
   font-size: 35px;
   line-height: 35px;
@@ -83,7 +83,7 @@
 
 .instructors__slider {
   position: relative;
-  margin-bottom: 49px;
+  margin-bottom: 36px;
 
   @include vp-1199 {
     margin-bottom: 41px;
@@ -106,7 +106,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 44px;
+  margin-bottom: 7px;
 }
 
 // .instructors__navigation {
@@ -192,8 +192,18 @@
 }
 
 .instructors__title h4 {
+  max-width: 111px;
   margin: 15px 0 14px;
   padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.instructors__link {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  outline: solid 1px $color-disabled;
 }
 
 .instructors__text p {
