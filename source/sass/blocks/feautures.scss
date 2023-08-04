@@ -35,7 +35,7 @@
 
 
 .features__wrapper {
-  padding: 0 0 107px 0;
+  padding: 0 0 130px 0;
 
   @include vp-1199 {
     padding: 0 0 70px 0;
@@ -91,7 +91,7 @@
   position: relative;
   right: 0;
   padding: 0;
-  margin: 0 0 50px 0;
+  margin: 0 0 49px 0;
 
   @include vp-1199 {
     margin: 0;
@@ -108,7 +108,7 @@
   text-align: center;
   align-items: center;
   list-style-type: none;
-  padding: 40px 20px;
+  padding: 36px 20px 40px;
   border: 1px solid $color-disabled;
 
   @include vp-1199 {
@@ -173,7 +173,10 @@
 }
 
 .features__item h3 {
-  margin: 30px 0 15px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  margin: 34px 0 15px;
 
   @include vp-1199 {
     margin: 25px 0 15px;
@@ -181,6 +184,8 @@
 }
 
 .features__item p {
+  font-size: 14px;
+  line-height: 22px;
   margin: 0;
 
   @include vp-1199 {

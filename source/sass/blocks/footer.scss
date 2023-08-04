@@ -25,7 +25,7 @@
 
 .footer__nav-wrapper {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -60,6 +60,7 @@
 }
 
 .footer__nav {
+  padding-right: 65px;
   min-width: 582px;
 
   @include vp-1199 {
@@ -197,7 +198,7 @@
 .footer__social-list {
   display: flex;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
   padding: 0;
   gap: 15px;
   align-items: center;

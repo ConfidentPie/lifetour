@@ -43,7 +43,7 @@
 
 .tours__wrapper {
   position: relative;
-  padding: 100px 0 102px;
+  padding: 122px 0 125px;
 
   @include vp-1199 {
     padding: 85px 0 70px;
@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 30px;
+  padding: 0 0 55px;
 }
 
 .tours__title {
@@ -183,7 +183,7 @@
 
 .tours__information {
   position: absolute;
-  padding: 28px 20px;
+  padding: 25px 20px;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -281,6 +281,7 @@
   text-align: center;
   font-size: 16px;
   line-height: 16px;
+  letter-spacing: 0.64px;
   font-weight: 700;
   text-transform: uppercase;
 }
