@@ -50,7 +50,7 @@
   }
 
   @include vp-767 {
-    padding: 60px 0;
+    padding: 66px 0;
   }
 }
 
@@ -59,6 +59,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 0 55px;
+
+  @include vp-1199 {
+    padding: 0 0 38px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 28px;
+  }
 }
 
 .tours__title {
@@ -152,12 +160,20 @@
   @include vp-1199 {
     padding: 0 7px 0;
   }
+
+  @include vp-767 {
+    padding: 0;
+  }
 }
 
 .tours__list {
   position: relative;
   margin: 0 0 52px 0;
   padding: 0;
+
+  @include vp-767 {
+    margin: 0 0 29px 0;
+  }
 }
 
 .tours__item {
@@ -193,6 +209,30 @@
   background-size: cover;
 }
 
+.tours__item-caucasus .tours__location {
+  width: 108px;
+
+  @include vp-1199 {
+    width: 97px;
+  }
+}
+
+.tours__item-altai .tours__location {
+  width: 108px;
+
+  @include vp-1199 {
+    width: 92px;
+  }
+}
+
+.tours__item-adygea .tours__location {
+  width: 108px;
+
+  @include vp-1199 {
+    width: 96px;
+  }
+}
+
 
 .tours__information {
   position: absolute;
@@ -201,6 +241,10 @@
   bottom: 0;
   left: 0;
   background: $tours-cards;
+
+  @include vp-767 {
+    padding: 47px 20px 25px;
+  }
 }
 
 .tours__information h3 {
@@ -225,6 +269,11 @@
   @include vp-1199 {
     padding: 0 51px 0 0;
   }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .tours__duration {
@@ -240,12 +289,26 @@
 }
 
 .tours__location {
-  padding: 9px 25px;
+  display: flex;
+  width: auto;
+  padding: 9px 0;
+  padding-left: 24px;
+  gap: 6px;
   background-color: $color-navy-blue;
   color: $color-default-white;
   font-size: 12px;
   line-height: 12px;
   font-weight: 500;
+
+  @include vp-1199 {
+    padding-left: 15px;
+    padding-right: auto;
+    gap: 6px;
+  }
+
+  @include vp-767 {
+    order: 3;
+  }
 }
 
 .tours__days,
@@ -297,6 +360,12 @@
   letter-spacing: 0.64px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
 }
 
 .tours__link a {

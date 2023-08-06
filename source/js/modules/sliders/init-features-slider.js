@@ -1,11 +1,12 @@
 const sliderFeatures = document.querySelector('.features__swiper');
 const buttonNext = document.querySelector('.features__button--next');
 const buttonPrev = document.querySelector('.features__button--prev');
+let mySwiper;
 
 const initSliderFeatures = () => {
-  if (sliderFeatures && innerWidth > 768) {
+  if (sliderFeatures && innerWidth > 1200) {
     // eslint-disable-next-line
-    new Swiper(sliderFeatures, {
+    mySwiper = new Swiper(sliderFeatures, {
       loop: true,
       navigation: {
         nextEl: buttonNext,
@@ -13,19 +14,23 @@ const initSliderFeatures = () => {
       },
 
       centeredSlides: true,
-
       breakpoints: {
         1200: {
           slidesPerView: 3.6,
           spaceBetween: 30,
-        },
-
-        768: {
-          slidesPerView: 1,
         },
       },
     });
   }
 };
 
-export {initSliderFeatures};
+const destroySwiperIfNeeded = () => {
+  if (window.innerWidth < 1200 && mySwiper) {
+    mySwiper.destroy();
+    document.querySelector('.features__swiper').style.display = 'block';
+  } else if (!mySwiper.initialized) {
+    initSliderFeatures();
+  }
+};
+
+export {initSliderFeatures, destroySwiperIfNeeded};
