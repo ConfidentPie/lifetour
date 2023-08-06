@@ -1,10 +1,11 @@
-let map = L.map('map').setView([55.774858, 37.632609], 14.61);
-
-
+/* eslint-disable no-undef */
 let initLeaflet = () => {
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  const map = L.map('map', {scrollWheelZoom: false}).setView([55.774906445034176, 37.632641498705205], 14);
+  L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+    maxZoom: 20,
+    subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
   }).addTo(map);
+
 
   let myIcon = L.icon({
     iconUrl: 'img/svg/pin.svg',
@@ -12,7 +13,7 @@ let initLeaflet = () => {
     iconAnchor: [19, 50],
   });
 
-  L.marker([55.774858, 37.632609], {icon: myIcon}).addTo(map);
+  L.marker([55.774906445034176, 37.632641498705205], {icon: myIcon}).addTo(map);
 };
 
 export {initLeaflet};
