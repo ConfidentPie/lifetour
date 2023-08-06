@@ -8,7 +8,7 @@ import {initSliderHero} from './modules/sliders/init-hero-slider';
 import {initSliderTours} from './modules/sliders/init-tours-slider';
 import {initSliderInstructors} from './modules/sliders/init-instructors-slider';
 import {initSliderReviews} from './modules/sliders/init-reviews-slider';
-import {initSliderFeatures} from './modules/sliders/init-features-slider';
+import {initSliderFeatures, destroySwiperIfNeeded} from './modules/sliders/init-features-slider';
 import {initSliderGallery} from './modules/sliders/init-gallery-slider';
 import {initNavToggle} from './modules/init-nav-toggle';
 
@@ -40,6 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSliderInstructors();
     initSliderReviews();
     initSliderFeatures();
+    window.addEventListener('resize', destroySwiperIfNeeded);
     initSliderGallery();
   });
 });

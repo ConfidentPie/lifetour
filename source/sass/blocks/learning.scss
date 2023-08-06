@@ -35,7 +35,10 @@
   }
 
   @include vp-767 {
-    margin: 0 0 30px 0;
+    font-size: 16px;
+    line-height: 16px;
+    padding-left: 4px;
+    margin: 0 0 28px 0;
   }
 }
 
@@ -66,15 +69,17 @@
       background-color: rgba(2, 102, 193, 0.1);
       width: 1px;
       height: calc(100% - 80px);
-      left: 8px;
+      left: 10px;
       bottom: 15px;
     }
   }
 }
 
 .learning__item {
+  display: flex;
+  align-items: center;
   max-width: 277px;
-  padding-left: 40px;
+  gap: 15px;
   padding-bottom: 32px;
   position: relative;
 
@@ -98,6 +103,8 @@
   }
 
   @include vp-767 {
+    gap: 12px;
+
     &::after {
       position: absolute;
       content: "";
@@ -105,62 +112,71 @@
       height: 13px;
       border-radius: 50%;
       background-color: $color-navy-blue;
-      top: 50%;
-      left: -34px;
+      top: 54%;
+      left: -32px;
       transform: translate(0, -50%);
     }
   }
 }
 
-.learning__item--map {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    top: 10px;
-    background-image: url("../../img/sprite/map.svg");
-    background-repeat: no-repeat;
-    left: 0;
+.learning__item--map svg {
+  @include vp-1199{
+    width: 35px;
+    height: 35px;
+  }
+
+  @include vp-767 {
+    width: 19px;
+    height: 19px;
   }
 }
 
-.learning__item--boot {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    top: 10px;
-    background-image: url("../../img/sprite/boot.svg");
-    background-repeat: no-repeat;
-    left: 0;
+.learning__item--boot svg{
+  @include vp-1199 {
+    width: 35px;
+    height: 35px;
+  }
+
+  @include vp-767 {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+.learning__item--trees svg {
+  @include vp-1199 {
+    width: 35px;
+    height: 35px;
+  }
+
+  @include vp-767 {
+    width: 19px;
+    height: 21px;
   }
 }
 
 .learning__item--trees {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    top: 10px;
-    background-image: url("../../img/sprite/pine-tree.svg");
-    background-repeat: no-repeat;
-    left: 0;
+  @include vp-1199 {
+    grid-column: -2/-1;
+  }
+}
+
+.learning__item--mountain svg {
+  @include vp-1199 {
+    width: 35px;
+    height: 35px;
+  }
+
+  @include vp-767 {
+    width: 19px;
+    height: 19px;
   }
 }
 
 .learning__item--mountain {
-  &::before {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 25px;
-    top: 10px;
-    background-image: url("../../img/sprite/mountain.svg");
-    background-repeat: no-repeat;
-    left: 0;
+  @include vp-1199 {
+    grid-column: -3/-2;
+    grid-row: 2/3;
   }
 }
 
@@ -174,12 +190,17 @@
     font-size: 14px;
     line-height: 22px;
   }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
-.learning__item svg {
-  width: 35px;
-  height: 35px;
-}
+// .learning__item svg {
+//   width: 25px;
+//   height: 25px;
+// }
 
 .learning__decor {
   position: absolute;
