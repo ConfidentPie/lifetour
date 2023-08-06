@@ -6,7 +6,7 @@ const initSliderFeatures = () => {
   if (sliderFeatures && innerWidth > 768) {
     // eslint-disable-next-line
     new Swiper(sliderFeatures, {
-
+      loop: true,
       navigation: {
         nextEl: buttonNext,
         prevEl: buttonPrev,
@@ -18,6 +18,10 @@ const initSliderFeatures = () => {
         1200: {
           slidesPerView: 3.6,
           spaceBetween: 30,
+        },
+
+        768: {
+          slidesPerView: 1,
         },
       },
     });

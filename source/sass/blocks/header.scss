@@ -10,6 +10,7 @@
   }
 
   @include vp-767 {
+    min-height: auto;
     max-height: 568px;
   }
 }
@@ -35,7 +36,7 @@
   @include vp-767 {
     display: grid;
     width: 100%;
-    padding: 15px 0 50px;
+    padding: 7px 0 40px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 54px 1fr;
     grid-template-areas:
@@ -233,6 +234,7 @@
 
   @include vp-767 {
     display: flex;
+    margin-top: -5px;
     font-size: 14px;
     line-height: 14px;
     justify-content: end;
@@ -298,6 +300,7 @@
   }
 
   @include vp-767 {
+    top: -6px;
     grid-area: button;
     align-self: flex-start;
   }
