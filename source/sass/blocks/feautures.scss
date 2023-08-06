@@ -4,7 +4,7 @@
   &::before {
     position: absolute;
     content: "";
-    background: url("../../img/features/clouds.svg");
+    background: url("../img/features/clouds.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 1170px;
@@ -16,7 +16,7 @@
   &::after {
     position: absolute;
     content: "";
-    background: url("../../img/features/clouds-small.svg");
+    background: url("../img/features/clouds-small.svg");
     background-repeat: no-repeat;
 
     width: 788px;

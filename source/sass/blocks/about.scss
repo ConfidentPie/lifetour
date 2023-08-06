@@ -6,7 +6,7 @@
     position: absolute;
     width: 808px;
     height: 474px;
-    background-image: url("../../img/about/background-desktop@1x.webp");
+    background-image: url("../img/about/background-desktop@1x.webp");
     background-repeat: no-repeat;
     background-size: cover;
     top: 52px;
@@ -16,7 +16,7 @@
 
   @media (min-resolution: $retina-dppx) {
     &::after {
-      background-image: url("../../img/about/background-desktop@2x.webp");
+      background-image: url("../img/about/background-desktop@2x.webp");
     }
   }
 
@@ -27,12 +27,12 @@
       height: 402px;
       top: 98px;
       left: 0;
-      background-image: url("../../img/about/background-tablet@1x.webp");
+      background-image: url("../img/about/background-tablet@1x.webp");
     }
 
     @media (min-resolution: $retina-dppx) {
       &::after {
-        background-image: url("../../img/about/background-tablet@2x.webp");
+        background-image: url("../img/about/background-tablet@2x.webp");
       }
     }
   }

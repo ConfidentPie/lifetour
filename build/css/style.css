@@ -2118,7 +2118,7 @@ button,
   position: relative;
   width: 100%;
   min-height: 800px;
-  background-image: url("../../img/hero/caucasus-desktop@2x.webp");
+  background-image: url("../img/hero/caucasus-desktop@2x.webp");
   background-size: cover;
 }
 @media (max-width: 1199px) {
@@ -2757,7 +2757,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero__item-text a {
-    min-width: 180px;
+    width: 180px;
     margin-bottom: 0;
     padding: 18px;
   }
@@ -3004,29 +3004,29 @@ button,
   bottom: -525px;
   width: 602px;
   height: 1364px;
-  background-image: url("../../img/tours/clouds-desktop@1x.png");
+  background-image: url("../img/tours/clouds-desktop@1x.png");
   background-size: cover;
   z-index: -1;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .tours::after {
-    background-image: url("../../img/tours/clouds-desktop@2x.png");
+    background-image: url("../img/tours/clouds-desktop@2x.png");
   }
 }
 @media (max-width: 1199px) {
   .tours::after {
     width: 301px;
-    background-image: url("../../img/tours/clouds-tablet@1x.png");
+    background-image: url("../img/tours/clouds-tablet@1x.png");
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .tours::after {
-    background-image: url("../../img/tours/clouds-tablet@2x.png");
+    background-image: url("../img/tours/clouds-tablet@2x.png");
   }
 }
 @media (max-width: 767px) {
   .tours::after {
-    background-image: url("../../img/tours/clouds-mobile@1x.png");
+    background-image: url("../img/tours/clouds-mobile@1x.png");
     width: 346px;
     height: 595px;
   }
@@ -3190,17 +3190,17 @@ button,
 }
 
 .tours__item-caucasus {
-  background: url("../../img/tours/caucasus-desktop@2x.webp");
+  background: url("../img/tours/caucasus-desktop@2x.webp");
   background-size: cover;
 }
 
 .tours__item-altai {
-  background: url("../../img/tours/altai-desktop@2x.webp");
+  background: url("../img/tours/altai-desktop@2x.webp");
   background-size: cover;
 }
 
 .tours__item-adygea {
-  background: url("../../img/tours/adygea-desktop@2x.webp");
+  background: url("../img/tours/adygea-desktop@2x.webp");
   background-size: cover;
 }
 
@@ -3686,7 +3686,7 @@ button,
 .learning::after {
   position: absolute;
   content: "";
-  background: url("../../img/features/clouds-small.svg");
+  background: url("../img/features/clouds-small.svg");
   background-repeat: no-repeat;
   width: 840px;
   height: 280px;
@@ -3828,8 +3828,8 @@ button,
 }
 @media (max-width: 767px) {
   .learning__item--map svg {
-    width: 19px;
-    height: 19px;
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -3841,8 +3841,8 @@ button,
 }
 @media (max-width: 767px) {
   .learning__item--boot svg {
-    width: 19px;
-    height: 19px;
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -3854,8 +3854,8 @@ button,
 }
 @media (max-width: 767px) {
   .learning__item--trees svg {
-    width: 19px;
-    height: 21px;
+    width: 26px;
+    height: 28px;
   }
 }
 
@@ -3873,8 +3873,8 @@ button,
 }
 @media (max-width: 767px) {
   .learning__item--mountain svg {
-    width: 19px;
-    height: 19px;
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -3908,7 +3908,7 @@ button,
 
 .learning__decor {
   position: absolute;
-  background: url("../../img/svg/line-desktop.svg");
+  background: url("../img/svg/line-desktop.svg");
   background-repeat: no-repeat;
   background-size: contain;
   bottom: -2px;
@@ -3918,7 +3918,7 @@ button,
 }
 @media (max-width: 1199px) {
   .learning__decor {
-    background: url("../../img/svg/line-tablet.svg");
+    background: url("../img/svg/line-tablet.svg");
     bottom: 55px;
     left: 0;
     width: 368px;
@@ -3939,7 +3939,7 @@ button,
   position: absolute;
   width: 808px;
   height: 474px;
-  background-image: url("../../img/about/background-desktop@1x.webp");
+  background-image: url("../img/about/background-desktop@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   top: 52px;
@@ -3947,7 +3947,7 @@ button,
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .about::after {
-    background-image: url("../../img/about/background-desktop@2x.webp");
+    background-image: url("../img/about/background-desktop@2x.webp");
   }
 }
 @media (max-width: 1199px) {
@@ -3957,12 +3957,12 @@ button,
     height: 402px;
     top: 98px;
     left: 0;
-    background-image: url("../../img/about/background-tablet@1x.webp");
+    background-image: url("../img/about/background-tablet@1x.webp");
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .about::after {
-    background-image: url("../../img/about/background-tablet@2x.webp");
+    background-image: url("../img/about/background-tablet@2x.webp");
   }
 }
 @media (max-width: 767px) {
@@ -4369,7 +4369,7 @@ button,
 .features::before {
   position: absolute;
   content: "";
-  background: url("../../img/features/clouds.svg");
+  background: url("../img/features/clouds.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 1170px;
@@ -4380,7 +4380,7 @@ button,
 .features::after {
   position: absolute;
   content: "";
-  background: url("../../img/features/clouds-small.svg");
+  background: url("../img/features/clouds-small.svg");
   background-repeat: no-repeat;
   width: 788px;
   height: 263px;
@@ -4788,32 +4788,32 @@ button,
 }
 
 .feedback {
-  background-image: url("../../img/feedback/bg-desktop@1x.webp");
+  background-image: url("../img/feedback/bg-desktop@1x.webp");
   background-size: cover;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .feedback {
-    background-image: url("../../img/feedback/bg-desktop@2x.webp");
+    background-image: url("../img/feedback/bg-desktop@2x.webp");
   }
 }
 @media (max-width: 1199px) {
   .feedback {
-    background-image: url("../../img/feedback/bg-tablet@1x.webp");
+    background-image: url("../img/feedback/bg-tablet@1x.webp");
   }
 }
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .feedback {
-    background-image: url("../../img/feedback/bg-tablet@2x.webp");
+    background-image: url("../img/feedback/bg-tablet@2x.webp");
   }
 }
 @media (max-width: 767px) {
   .feedback {
-    background-image: url("../../img/feedback/bg-mobile@1x.webp");
+    background-image: url("../img/feedback/bg-mobile@1x.webp");
   }
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .feedback {
-    background-image: url("../../img/feedback/bg-mobile@2x.webp");
+    background-image: url("../img/feedback/bg-mobile@2x.webp");
   }
 }
 
@@ -5089,7 +5089,7 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 30px;
+    gap: 32.5px;
   }
 }
 
@@ -5135,6 +5135,8 @@ button,
 }
 @media (max-width: 767px) {
   .contacts__info dt {
+    font-size: 14px;
+    line-height: 14px;
     margin-bottom: 6px;
   }
 }
