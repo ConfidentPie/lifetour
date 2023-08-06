@@ -8,33 +8,33 @@
     bottom: -525px;
     width: 602px;
     height: 1364px;
-    background-image: url("../../img/tours/clouds-desktop@1x.png");
+    background-image: url("../img/tours/clouds-desktop@1x.png");
     background-size: cover;
     z-index: -1;
   }
 
   @media (min-resolution: $retina-dppx) {
     &::after {
-      background-image: url("../../img/tours/clouds-desktop@2x.png");
+      background-image: url("../img/tours/clouds-desktop@2x.png");
     }
   }
 
   @include vp-1199 {
     &::after {
       width: 301px;
-      background-image: url("../../img/tours/clouds-tablet@1x.png");
+      background-image: url("../img/tours/clouds-tablet@1x.png");
     }
 
     @media (min-resolution: $retina-dppx) {
       &::after {
-        background-image: url("../../img/tours/clouds-tablet@2x.png");
+        background-image: url("../img/tours/clouds-tablet@2x.png");
       }
     }
   }
 
   @include vp-767 {
     &::after {
-      background-image: url("../../img/tours/clouds-mobile@1x.png");
+      background-image: url("../img/tours/clouds-mobile@1x.png");
       width: 346px;
       height: 595px;
     }
@@ -194,18 +194,18 @@
 }
 
 .tours__item-caucasus {
-  background: url("../../img/tours/caucasus-desktop@2x.webp");
+  background: url("../img/tours/caucasus-desktop@2x.webp");
   background-size: cover;
 }
 
 .tours__item-altai {
-  background: url("../../img/tours/altai-desktop@2x.webp");
+  background: url("../img/tours/altai-desktop@2x.webp");
   background-size: cover;
 }
 
 
 .tours__item-adygea {
-  background: url("../../img/tours/adygea-desktop@2x.webp");
+  background: url("../img/tours/adygea-desktop@2x.webp");
   background-size: cover;
 }
 
