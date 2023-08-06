@@ -20,15 +20,15 @@ const initSliderHero = () => {
 
     swiper.on('transitionStart', function (e) {
       if (e.activeIndex === 0) {
-        document.querySelector('header').style.backgroundImage = 'url("../img/hero/caucasus-desktop@2x.webp")';
+        document.querySelector('header').style.backgroundImage = 'url("img/hero/caucasus-desktop@2x.webp")';
         document.querySelector('header').style.backgroundSize = 'cover';
       }
       if (e.activeIndex === 1) {
-        document.querySelector('header').style.backgroundImage = 'url("../img/hero/kamchatka-desktop@2x.webp")';
+        document.querySelector('header').style.backgroundImage = 'url("img/hero/kamchatka-desktop@2x.webp")';
         document.querySelector('header').style.backgroundSize = 'cover';
       }
       if (e.activeIndex === 2) {
-        document.querySelector('header').style.backgroundImage = 'url("../img/hero/altai-desktop@2x.webp")';
+        document.querySelector('header').style.backgroundImage = 'url("img/hero/altai-desktop@2x.webp")';
         document.querySelector('header').style.backgroundSize = 'cover';
       }
     });
