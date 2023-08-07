@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -2121,6 +2122,17 @@ button,
   background-image: url("../img/hero/caucasus-desktop@2x.webp");
   background-size: cover;
 }
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Цвет затемнения */
+  z-index: -1;
+  opacity: 0;
+}
 @media (max-width: 1199px) {
   .header {
     max-height: 1024px;
@@ -2455,7 +2467,7 @@ button,
     align-self: flex-start;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px){
   .header__logo {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
