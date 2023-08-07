@@ -39,13 +39,13 @@
 
   @include vp-767 {
     &::after {
-    background-size: cover;
-    min-height: 402px;
-    left: 1px;
-    top: 17px;
-    width: 100%;
-    height: auto;
-    background-position: 28% 0;
+      background-size: cover;
+      min-height: 402px;
+      left: 1px;
+      top: 17px;
+      width: 100%;
+      height: auto;
+      background-position: 28% 0;
     }
   }
 }

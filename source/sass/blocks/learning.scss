@@ -120,7 +120,7 @@
 }
 
 .learning__item--map svg {
-  @include vp-1199{
+  @include vp-1199 {
     width: 35px;
     height: 35px;
   }
@@ -131,7 +131,7 @@
   }
 }
 
-.learning__item--boot svg{
+.learning__item--boot svg {
   @include vp-1199 {
     width: 35px;
     height: 35px;
