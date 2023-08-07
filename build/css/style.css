@@ -2120,6 +2120,7 @@ button,
   width: 100%;
   min-height: 800px;
   background-image: url("../img/hero/caucasus-desktop@2x.webp");
+  background-color: #0266c1;
   background-size: cover;
 }
 .header::before {
@@ -3202,16 +3203,19 @@ button,
 }
 
 .tours__item-caucasus {
+  background-color: #0266c1;
   background: url("../img/tours/caucasus-desktop@2x.webp");
   background-size: cover;
 }
 
 .tours__item-altai {
+  background-color: #0266c1;
   background: url("../img/tours/altai-desktop@2x.webp");
   background-size: cover;
 }
 
 .tours__item-adygea {
+  background-color: #0266c1;
   background: url("../img/tours/adygea-desktop@2x.webp");
   background-size: cover;
 }
@@ -3636,6 +3640,7 @@ button,
 }
 
 .instructors__item img {
+  background-color: #0266c1;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -4765,6 +4770,7 @@ button,
 }
 .gallery__item:first-child img,
 .gallery__item:nth-child(n+2) img {
+  background-color: #0266c1;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -4800,6 +4806,7 @@ button,
 }
 
 .feedback {
+  background-color: #1E3A11;
   background-image: url("../img/feedback/bg-desktop@1x.webp");
   background-size: cover;
 }
