@@ -33,4 +33,11 @@ const destroySwiperIfNeeded = () => {
   }
 };
 
-export {initSliderFeatures, destroySwiperIfNeeded};
+const handleResize = () => {
+  destroySwiperIfNeeded();
+};
+
+window.addEventListener('resize', handleResize);
+
+
+export {initSliderFeatures, handleResize};
