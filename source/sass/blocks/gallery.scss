@@ -127,16 +127,15 @@
   list-style-type: none;
 }
 
-.gallery__item:first-child,
-.gallery__item:nth-child(n+2) {
-  width: 275px;
-  height: 449px;
+.gallery__item {
+  max-width: 298px;
+  max-height: 449px;
+
 
   & img {
     background-color: $color-navy-blue;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+    object-fit: cover;
+    min-height: 100%;
   }
 
   @include vp-767 {
@@ -145,9 +144,8 @@
   }
 }
 
-
-.gallery__item:nth-child(2n+2) {
-  width: 298px;
+.gallery__item--small {
+  max-width: 298px;
   height: auto;
 }
 
