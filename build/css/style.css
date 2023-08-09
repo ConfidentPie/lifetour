@@ -2564,16 +2564,11 @@ button,
   position: absolute;
   content: "";
   width: 100%;
-  min-height: 420px;
+  height: 100%;
   background-color: #ffffff;
   top: 0;
   left: 0;
   z-index: 3;
-}
-@media (max-width: 767px) {
-  .header__nav--opened::before {
-    min-height: 343px;
-  }
 }
 
 .header__nav--opened ~ .header__logo {
@@ -3227,19 +3222,19 @@ button,
 
 .tours__item-caucasus {
   background-color: #0266c1;
-  background: url("../img/tours/caucasus-desktop@2x.webp");
+  background-image: url("../img/tours/caucasus-desktop@2x.webp");
   background-size: cover;
 }
 
 .tours__item-altai {
   background-color: #0266c1;
-  background: url("../img/tours/altai-desktop@2x.webp");
+  background-image: url("../img/tours/altai-desktop@2x.webp");
   background-size: cover;
 }
 
 .tours__item-adygea {
   background-color: #0266c1;
-  background: url("../img/tours/adygea-desktop@2x.webp");
+  background-image: url("../img/tours/adygea-desktop@2x.webp");
   background-size: cover;
 }
 
