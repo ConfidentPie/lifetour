@@ -30,7 +30,7 @@
 
   @include vp-1199 {
     position: relative;
-    padding: 0 30px 90px;
+    padding: 0 0 90px;
     max-width: 100%;
     margin: 0;
   }
@@ -240,16 +240,15 @@
   width: 410px;
   height: 459px;
   right: 1px;
-  top: 120px;
+  top: 94px;
   z-index: 1;
 
   @include vp-1199 {
     width: 442px;
     height: 365px;
     right: auto;
-    left: 150px;
-    top: 94px;
-    bottom: 169px;
+    left: 114px;
+    top: 316px;
   }
 
   @include vp-767 {
@@ -259,7 +258,7 @@
 
 .hero__audio {
   position: absolute;
-  top: 200px;
+  top: 192px;
   right: 0;
 
   & iframe {
@@ -271,7 +270,7 @@
     top: inherit;
     bottom: 279px;
     right: 50%;
-    top: 192px;
+    top: 351px;
     transform: translate(50%, 0);
   }
 
@@ -324,7 +323,7 @@
     text-align: center;
     justify-content: center;
     left: 0;
-    bottom: 146px;
+    bottom: 90px;
     right: inherit;
   }
 

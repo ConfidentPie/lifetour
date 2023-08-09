@@ -2619,7 +2619,7 @@ button,
 @media (max-width: 1199px) {
   .hero__item-wrapper {
     position: relative;
-    padding: 0 30px 90px;
+    padding: 0 0 90px;
     max-width: 100%;
     margin: 0;
   }
@@ -2858,7 +2858,7 @@ button,
   width: 410px;
   height: 459px;
   right: 1px;
-  top: 120px;
+  top: 94px;
   z-index: 1;
 }
 @media (max-width: 1199px) {
@@ -2866,9 +2866,8 @@ button,
     width: 442px;
     height: 365px;
     right: auto;
-    left: 150px;
-    top: 94px;
-    bottom: 169px;
+    left: 114px;
+    top: 316px;
   }
 }
 @media (max-width: 767px) {
@@ -2879,7 +2878,7 @@ button,
 
 .hero__audio {
   position: absolute;
-  top: 200px;
+  top: 192px;
   right: 0;
 }
 .hero__audio iframe {
@@ -2891,7 +2890,7 @@ button,
     top: inherit;
     bottom: 279px;
     right: 50%;
-    top: 192px;
+    top: 351px;
     -webkit-transform: translate(50%, 0);
         -ms-transform: translate(50%, 0);
             transform: translate(50%, 0);
@@ -2958,7 +2957,7 @@ button,
         -ms-flex-pack: center;
             justify-content: center;
     left: 0;
-    bottom: 146px;
+    bottom: 90px;
     right: inherit;
   }
 }
@@ -4962,6 +4961,7 @@ button,
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
+  cursor: pointer;
 }
 .form__button:hover, .form__button:focus {
   outline: 1px solid #2d383f;
