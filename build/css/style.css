@@ -1612,7 +1612,7 @@ button,
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 340px;
+  width: 340px;
   min-height: 48px;
   margin-left: auto;
   padding: 24px 30px;
@@ -2121,6 +2121,7 @@ button,
   background-image: url("../img/hero/caucasus-desktop@2x.webp");
   background-color: #0266c1;
   background-size: cover;
+  padding-bottom: 77px;
 }
 .header::before {
   content: "";
@@ -2135,13 +2136,7 @@ button,
 }
 @media (max-width: 1199px) {
   .header {
-    max-height: 1024px;
-  }
-}
-@media (max-width: 767px) {
-  .header {
-    min-height: auto;
-    max-height: 568px;
+    padding-bottom: 90px;
   }
 }
 
@@ -2166,7 +2161,7 @@ button,
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 25px 0 49px;
+    padding: 25px 0 0;
     max-width: 100%;
     margin: 0;
     width: 100%;
@@ -2599,16 +2594,6 @@ button,
 .hero {
   width: 100%;
 }
-@media (max-width: 1199px) {
-  .hero {
-    min-height: 1024px;
-  }
-}
-@media (max-width: 767px) {
-  .hero {
-    min-height: 568px;
-  }
-}
 
 @media (max-width: 1199px) {
   .hero__swiper {
@@ -2635,7 +2620,7 @@ button,
 @media (max-width: 1199px) {
   .hero__item-wrapper {
     position: relative;
-    padding: 0 0 90px;
+    padding: 0;
     max-width: 100%;
     margin: 0;
   }
@@ -2717,6 +2702,7 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__item-text h2 {
+    padding-top: 50px;
     margin: 0 0 13px 0;
     font-size: 56px;
     line-height: 56px;
@@ -2804,7 +2790,7 @@ button,
 @media (max-width: 1199px) {
   .hero__video {
     top: inherit;
-    bottom: 218px;
+    bottom: 128px;
     right: 50%;
     -webkit-transform: translate(50%, 0);
         -ms-transform: translate(50%, 0);
@@ -2965,7 +2951,7 @@ button,
 }
 @media (max-width: 1199px) {
   .swiper .hero__pagination {
-    margin: 0 auto;
+    margin: -90px auto;
     width: 100%;
     max-width: 100%;
     text-align: center;
@@ -3451,7 +3437,7 @@ button,
 .tours__item h3 {
   position: relative;
   margin: 0 0 38px;
-  padding: 0 107px 0 0;
+  padding: 0 90px 0 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -4968,28 +4954,25 @@ button,
   list-style-type: none;
 }
 
-.gallery__item:first-child,
-.gallery__item:nth-child(n+2) {
-  width: 275px;
-  height: 449px;
+.gallery__item {
+  max-width: 298px;
+  max-height: 449px;
 }
-.gallery__item:first-child img,
-.gallery__item:nth-child(n+2) img {
+.gallery__item img {
   background-color: #0266c1;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
 }
 @media (max-width: 767px) {
-  .gallery__item:first-child,
-.gallery__item:nth-child(n+2) {
+  .gallery__item {
     width: 159px;
     height: auto;
   }
 }
 
-.gallery__item:nth-child(2n+2) {
-  width: 298px;
+.gallery__item--small {
+  max-width: 298px;
   height: auto;
 }
 

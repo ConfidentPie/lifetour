@@ -5,6 +5,7 @@
   background-image: url("../img/hero/caucasus-desktop@2x.webp");
   background-color: $color-navy-blue;
   background-size: cover;
+  padding-bottom: 77px;
 
   &::before {
     content: '';
@@ -19,13 +20,13 @@
   }
 
   @include vp-1199 {
-    max-height: 1024px;
+    padding-bottom: 90px;
   }
 
-  @include vp-767 {
-    min-height: auto;
-    max-height: 568px;
-  }
+  // @include vp-767 {
+  //   min-height: auto;
+  //   min-height: 568px;
+  // }
 }
 
 .header__wrapper {
@@ -39,7 +40,7 @@
   @include vp-1199 {
     display: flex;
     flex-wrap: wrap;
-    padding: 25px 0 49px;
+    padding: 25px 0 0;
     max-width: 100%;
     margin: 0;
     width: 100%;

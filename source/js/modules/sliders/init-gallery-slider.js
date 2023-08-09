@@ -13,22 +13,6 @@ const initSliderGallery = () => {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
-      // breakpoints: {
-      //   1200: {
-      //     slidesPerView: 4,
-      //     spaceBetween: 30,
-      //   },
-
-      //   768: {
-      //     slidesPerView: 3,
-      //     spaceBetween: 30,
-      //   },
-
-      //   320: {
-      //     slidesPerView: 1,
-      //     spaceBetween: 20,
-      //   },
-      // },
     });
   }
 };
