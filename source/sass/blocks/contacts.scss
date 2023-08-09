@@ -101,6 +101,23 @@
   }
 }
 
+.contacts__info a {
+  &:hover {
+    @include hover;
+    color: $color-resolution-blue;
+  }
+
+  &:focus {
+    @include focus;
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    @include active;
+    color: $color-navy-blue;
+  }
+}
+
 .contacts__info dl {
   margin: 0;
 }
