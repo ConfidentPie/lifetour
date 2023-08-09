@@ -3139,6 +3139,7 @@ button,
   height: 35px;
   background-color: #0266c1;
   border: none;
+  cursor: pointer;
 }
 .tours__button svg {
   color: #ffffff;
@@ -3584,6 +3585,7 @@ button,
   height: 35px;
   background-color: #0266c1;
   border: none;
+  cursor: pointer;
 }
 .instructors__button svg {
   color: #ffffff;
@@ -4211,6 +4213,7 @@ button,
   height: 35px;
   background-color: #0266c1;
   border: none;
+  cursor: pointer;
 }
 .reviews__button svg {
   color: #ffffff;
@@ -4563,6 +4566,7 @@ button,
   height: 35px;
   background-color: #0266c1;
   border: none;
+  cursor: pointer;
 }
 .features__button svg {
   color: #ffffff;
@@ -4735,6 +4739,7 @@ button,
   height: 35px;
   background-color: #0266c1;
   border: none;
+  cursor: pointer;
 }
 .gallery__button svg {
   color: #ffffff;
