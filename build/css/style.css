@@ -2250,12 +2250,12 @@ button,
         -ms-flex-order: 3;
             order: 3;
     width: 100%;
-    margin-top: 40px;
+    margin: 35px 0 4px 0;
   }
 }
 @media (max-width: 767px) {
   .header__nav {
-    margin-top: 30px;
+    margin: 24px 0 7px 0;
     grid-area: list;
   }
 }
@@ -2280,6 +2280,7 @@ button,
 @media (max-width: 1199px) {
   .header__nav-list {
     display: none;
+    gap: 16px;
   }
 }
 @media (max-width: 767px) {
@@ -2356,6 +2357,7 @@ button,
 }
 @media (max-width: 1199px) {
   .header__nav-item a {
+    letter-spacing: 0.8px;
     color: #000000;
   }
 }
@@ -2514,6 +2516,26 @@ button,
           transform: rotate(-45deg);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+@media (max-width: 1199px) {
+  .header__nav--opened ~ .header__nav-toggle::before, .header__nav--opened ~ .header__nav-toggle::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    width: 24px;
+    height: 2px;
+  }
+}
+@media (max-width: 767px) {
+  .header__nav--opened ~ .header__nav-toggle::before, .header__nav--opened ~ .header__nav-toggle::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    width: 24px;
+    height: 2px;
+  }
 }
 
 .header__nav--nojs .header__nav-list {
@@ -3393,7 +3415,10 @@ button,
 }
 
 .tours__link {
-  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.64px;
@@ -3971,8 +3996,7 @@ button,
 }
 @media (max-width: 1199px) {
   .about::after {
-    background-size: contain;
-    width: 685px;
+    width: 475px;
     height: 402px;
     top: 98px;
     left: 0;
@@ -4206,6 +4230,11 @@ button,
 .reviews__list {
   margin: 0;
   padding: 0;
+}
+@media (max-width: 1199px) {
+  .reviews__list {
+    left: -82px;
+  }
 }
 
 .reviews__button {

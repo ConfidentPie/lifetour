@@ -28,7 +28,7 @@ const destroySwiperIfNeeded = () => {
   if (window.innerWidth < 1200 && mySwiper) {
     mySwiper.destroy();
     document.querySelector('.features__swiper').style.display = 'block';
-  } else if (!mySwiper.initialized) {
+  } else if (mySwiper && !mySwiper.initialized) {
     initSliderFeatures();
   }
 };

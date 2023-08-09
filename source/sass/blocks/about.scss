@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 52px;
-    // left: 0;
     z-index: -1;
   }
 
@@ -22,8 +21,7 @@
 
   @include vp-1199 {
     &::after {
-      background-size: contain;
-      width: 685px;
+      width: 475px;
       height: 402px;
       top: 98px;
       left: 0;

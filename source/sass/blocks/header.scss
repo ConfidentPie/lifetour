@@ -112,11 +112,11 @@
   @include vp-1199 {
     order: 3;
     width: 100%;
-    margin-top: 40px;
+    margin: 35px 0 4px 0;
   }
 
   @include vp-767 {
-    margin-top: 30px;
+    margin: 24px 0 7px 0;
     grid-area: list;
   }
 }
@@ -135,6 +135,7 @@
 
   @include vp-1199 {
     display: none;
+    gap: 16px;
   }
 
   @include vp-767 {
@@ -204,6 +205,7 @@
   }
 
   @include vp-1199 {
+    letter-spacing: 0.8px;
     color: $color-default-black;
   }
 }
@@ -343,6 +345,30 @@
     transform: rotate(-45deg);
     box-shadow: none;
   }
+
+  @include vp-1199 {
+    &::before,
+    &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    width: 24px;
+    height: 2px;
+   }
+  }
+
+  @include vp-767 {
+    &::before,
+    &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 12px;
+    width: 24px;
+    height: 2px;
+   }
+  }
 }
 
 .header__nav--nojs .header__nav-list {
@@ -374,19 +400,6 @@
     min-height: 343px;
   }
 }
-
-// .header__nav--opened + header {
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     width: 100%;
-//     height: 100%;
-//     z-index: 5;
-//     background: var(--overlay-50, rgba(0, 0, 0, 0.50));
-//     left: 0;
-//     top: 0;
-//   }
-// }
 
 .header__nav--opened ~ .header__logo {
   color: $color-elephant;

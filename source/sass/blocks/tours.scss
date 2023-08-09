@@ -357,7 +357,8 @@
 }
 
 .tours__link {
-  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.64px;
