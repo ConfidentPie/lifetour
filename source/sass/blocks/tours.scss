@@ -178,9 +178,24 @@
 
 .tours__item {
   position: relative;
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
   min-height: 412px;
   max-width: 380px;
+  padding: 206px 20px 28px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(
+      --overlay-60,
+      linear-gradient(0deg, rgba(0, 0, 0, 0.6) 11.9%, rgba(0, 0, 0, 0) 100%)
+    );
+  }
 
   @include vp-1199 {
     min-width: 324px;
@@ -236,23 +251,147 @@
   }
 }
 
+.tours__data {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $color-default-white;
+  z-index: 3;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  max-width: 100%;
+  margin-bottom: 23px;
+  row-gap: 5px;
+  gap: 37px;
 
-.tours__information {
-  position: absolute;
-  padding: 25px 20px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: $tours-cards;
+  @include vp-1199 {
+    flex-wrap: nowrap;
+    gap: 17px;
+  }
 
   @include vp-767 {
-    padding: 47px 20px 25px;
+    position: relative;
+    margin-bottom: 15px;
+    gap: 19px;
+    row-gap: 15px;
+    flex-wrap: wrap;
   }
 }
 
-.tours__information h3 {
+.tours__point {
   position: relative;
-  margin: 0 0 38px 0;
+  display: flex;
+  min-width: 108px;
+  min-height: 29px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0266c1;
+  padding: 5px 0;
+  padding-left: 17px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite/pin.svg");
+    width: 9px;
+    height: 12px;
+    top: 9px;
+    left: 24px;
+  }
+
+  @include vp-1199 {
+    min-width: 92px;
+    min-height: 29px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0266c1;
+    padding: 9px 23px 8px 31px;
+
+    &::before {
+      top: 8px;
+      left: 15px;
+    }
+  }
+
+  @include vp-767 {
+    order: 3;
+  }
+}
+
+.tours__days {
+  display: flex;
+  position: relative;
+  padding-left: 32px;
+  padding-right: 9px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 12px;
+  min-height: 20px;
+  max-width: 76px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite/days.svg");
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 0;
+  }
+
+  @include vp-1199 {
+    max-width: 73px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    min-height: 20px;
+
+    &::before {
+      top: 0;
+    }
+  }
+}
+
+.tours__nights {
+  display: flex;
+  position: relative;
+  padding-left: 32px;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 12px;
+  min-height: 20px;
+  max-width: 82px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/sprite/nights.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 0;
+  }
+
+  @include vp-767 {
+    min-height: 20px;
+
+    &::before {
+      top: 0;
+    }
+  }
+}
+
+.tours__item h3 {
+  position: relative;
+  margin: 0 0 38px;
   padding: 0 107px 0 0;
   font-size: 24px;
   line-height: 28px;
@@ -271,6 +410,7 @@
 
   @include vp-1199 {
     padding: 0 51px 0 0;
+    margin-bottom: 30px;
   }
 
   @include vp-767 {
@@ -329,6 +469,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 
 .tours__description dl,
@@ -354,6 +495,10 @@
 
 .tours__level svg {
   color: transparent;
+
+  @include vp-767 {
+    width: 73px;
+  }
 }
 
 .tours__link {
