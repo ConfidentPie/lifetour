@@ -124,6 +124,7 @@
 }
 
 .header__nav-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: auto;
@@ -138,10 +139,27 @@
   @include vp-1199 {
     display: none;
     gap: 16px;
+
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 100vh;
+      background-color: $color-default-white;
+      bottom: -64px;
+      right: 0;
+      z-index: 3;
+      box-shadow:  100vw 0px $color-default-white;
+    }
   }
 
   @include vp-767 {
     gap: 12px;
+
+    &::before {
+      bottom: -45px;
+    }
   }
 }
 
@@ -392,16 +410,16 @@
   z-index: 3;
 }
 
-.header__nav--opened::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 40%;
-  background-color: $color-default-white;
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
+// .header__nav--opened::before {
+//   position: absolute;
+//   content: "";
+//   width: 100vw;
+//   height: 40%;
+//   background-color: $color-default-white;
+//   top: 0;
+//   left: 0;
+//   z-index: 3;
+// }
 
 .header__nav--opened ~ .header__logo {
   color: $color-elephant;

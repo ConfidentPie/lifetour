@@ -3,7 +3,6 @@ import {initModals} from './modules/modals/init-modals';
 import {initVideoPlayer} from './modules/init-video-player';
 import {Form} from './modules/form-validate/form';
 import {initLeaflet} from './modules/leaflet/init-leaflet';
-import {getSlidesTabs} from './modules/sliders/get-slide-tabs';
 import {initSliderHero} from './modules/sliders/init-hero-slider';
 import {initSliderTours} from './modules/sliders/init-tours-slider';
 import {initSliderInstructors} from './modules/sliders/init-instructors-slider';
@@ -38,7 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initNavToggle();
     initVideoPlayer();
     initLeaflet();
-    getSlidesTabs();
     initSliderHero();
     initSliderTours();
     initSliderInstructors();
