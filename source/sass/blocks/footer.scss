@@ -170,7 +170,10 @@
 }
 
 .footer__phone {
-  display: block;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  flex-direction: column;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
