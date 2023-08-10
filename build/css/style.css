@@ -4490,6 +4490,7 @@ body.overlay::before {
 
 .reviews__item {
   max-width: 790px;
+  height: auto;
   padding: 20px 40px 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
