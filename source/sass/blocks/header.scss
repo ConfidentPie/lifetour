@@ -108,6 +108,7 @@
 }
 
 .header__nav {
+  max-width: 600px;
   order: 1;
 
   @include vp-1199 {
