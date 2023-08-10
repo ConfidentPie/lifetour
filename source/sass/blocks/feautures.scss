@@ -120,20 +120,20 @@
 }
 
 .features__item {
+  padding: 36px 20px 40px;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: $color-default-white;
   text-align: center;
   align-items: center;
   list-style-type: none;
-  padding: 36px 20px 40px;
   border: 1px solid $color-disabled;
 
   @include vp-1199 {
     margin: 0;
     flex-basis: 50%;
     max-width: 324px;
-    height: auto;
     padding: 30px 20px;
     box-sizing: border-box;
   }
