@@ -12,6 +12,7 @@ import {initSliderFeatures, handleResize} from './modules/sliders/init-features-
 import {initSliderGallery} from './modules/sliders/init-gallery-slider';
 import {initNavToggle} from './modules/init-nav-toggle';
 import './utils/scroll-lock';
+import './utils/focus-lock';
 
 
 // ---------------------------------

@@ -2239,6 +2239,7 @@ button,
 }
 
 .header__nav {
+  max-width: 600px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
