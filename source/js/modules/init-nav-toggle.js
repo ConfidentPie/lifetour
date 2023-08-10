@@ -1,7 +1,6 @@
 let nav = document.querySelector('.header__nav');
 let toggle = document.querySelector('.header__nav-toggle');
 
-
 const initNavToggle = () => {
   nav.classList.remove('header__nav--nojs');
 
@@ -9,9 +8,11 @@ const initNavToggle = () => {
     if (nav.classList.contains('header__nav--opened')) {
       nav.classList.remove('header__nav--opened');
       nav.classList.add('header__nav--closed');
+      window.scrollLock.enableScrolling();
     } else {
       nav.classList.remove('header__nav--closed');
       nav.classList.add('header__nav--opened');
+      window.scrollLock.disableScrolling();
     }
   });
 };
