@@ -2292,8 +2292,8 @@ button,
     bottom: -64px;
     right: 0;
     z-index: 3;
-    -webkit-box-shadow: 100vw 0px #ffffff;
-            box-shadow: 100vw 0px #ffffff;
+    -webkit-box-shadow: 99vw 0px #ffffff;
+            box-shadow: 99vw 0px #ffffff;
   }
 }
 @media (max-width: 767px) {
@@ -2903,7 +2903,7 @@ body.overlay::before {
     height: 365px;
     right: auto;
     left: 114px;
-    top: 316px;
+    top: 366px;
   }
 }
 @media (max-width: 767px) {
@@ -2923,10 +2923,8 @@ body.overlay::before {
 }
 @media (max-width: 1199px) {
   .hero__audio {
-    top: inherit;
-    bottom: 279px;
     right: 50%;
-    top: 351px;
+    top: 401px;
     -webkit-transform: translate(50%, 0);
         -ms-transform: translate(50%, 0);
             transform: translate(50%, 0);

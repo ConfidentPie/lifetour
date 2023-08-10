@@ -242,7 +242,7 @@
     height: 365px;
     right: auto;
     left: 114px;
-    top: 316px;
+    top: 366px;
   }
 
   @include vp-767 {
@@ -261,10 +261,8 @@
   }
 
   @include vp-1199 {
-    top: inherit;
-    bottom: 279px;
     right: 50%;
-    top: 351px;
+    top: 401px;
     transform: translate(50%, 0);
   }
 
