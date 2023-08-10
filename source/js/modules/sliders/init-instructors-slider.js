@@ -7,6 +7,10 @@ const initSliderInstructors = () => {
   if (sliderInstructors) {
     // eslint-disable-next-line
     new Swiper(sliderInstructors, {
+      initialSlide: 0,
+      cssMode: true,
+      direction: 'horizontal',
+      loop: false,
 
       navigation: {
         nextEl: buttonNext,
@@ -22,11 +26,13 @@ const initSliderInstructors = () => {
         768: {
           slidesPerView: 3,
           spaceBetween: 30,
+          initialSlide: 0,
         },
 
         320: {
           slidesPerView: 1,
           spaceBetween: 20,
+          initialSlide: 0,
         },
       },
     });
