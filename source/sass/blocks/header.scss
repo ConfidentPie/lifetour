@@ -212,6 +212,10 @@
 }
 
 .header__phone {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  flex-direction: column;
   order: 2;
 
   @include vp-767 {
