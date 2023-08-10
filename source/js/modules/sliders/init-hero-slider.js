@@ -8,9 +8,6 @@ const initSliderHero = () => {
   if (sliderHero) {
 
     const swiper = new Swiper(sliderHero, {
-      initialSlide: 0,
-      cssMode: true,
-      direction: 'horizontal',
 
       pagination: {
         el: sliderPagination,

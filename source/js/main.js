@@ -11,12 +11,15 @@ import {initSliderReviews} from './modules/sliders/init-reviews-slider';
 import {initSliderFeatures, handleResize} from './modules/sliders/init-features-slider';
 import {initSliderGallery} from './modules/sliders/init-gallery-slider';
 import {initNavToggle} from './modules/init-nav-toggle';
+import './utils/scroll-lock';
+
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
+
   // ---------------------------------
 
   iosVhFix();

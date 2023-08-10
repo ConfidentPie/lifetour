@@ -1208,7 +1208,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 html {
@@ -3214,6 +3213,7 @@ button,
   .tours__item {
     min-width: 324px;
     max-width: 100%;
+    padding: 206px 20px 26px;
   }
 }
 @media (max-width: 767px) {
@@ -3458,7 +3458,7 @@ button,
 @media (max-width: 1199px) {
   .tours__item h3 {
     padding: 0 51px 0 0;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
   }
 }
 @media (max-width: 767px) {
@@ -3863,6 +3863,16 @@ button,
   text-align: center;
   outline: solid 1px rgba(2, 102, 193, 0.1);
 }
+.instructors__link:hover, .instructors__link:focus {
+  outline: 1px solid #2d383f;
+}
+.instructors__link:active {
+  outline: none;
+  background-color: #0266c1;
+}
+.instructors__link:active svg {
+  color: #ffffff;
+}
 @media (max-width: 767px) {
   .instructors__link {
     position: absolute;
@@ -3927,6 +3937,8 @@ button,
 }
 
 .learning__list {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3936,8 +3948,6 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 @media (max-width: 1199px) {
   .learning__list {
@@ -4132,6 +4142,10 @@ button,
   .learning__decor {
     background: none;
   }
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 .about {
@@ -4963,7 +4977,7 @@ button,
 }
 
 .gallery__item {
-  max-width: 298px;
+  max-width: 275px;
   max-height: 449px;
 }
 .gallery__item img {
