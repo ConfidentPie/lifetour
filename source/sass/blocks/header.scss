@@ -400,6 +400,7 @@
 }
 
 .header__nav--closed .header__nav-list {
+
   display: none;
 }
 
@@ -409,17 +410,6 @@
   flex-direction: column;
   z-index: 3;
 }
-
-// .header__nav--opened::before {
-//   position: absolute;
-//   content: "";
-//   width: 100vw;
-//   height: 40%;
-//   background-color: $color-default-white;
-//   top: 0;
-//   left: 0;
-//   z-index: 3;
-// }
 
 .header__nav--opened ~ .header__logo {
   color: $color-elephant;
