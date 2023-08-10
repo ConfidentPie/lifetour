@@ -1208,7 +1208,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 html {
@@ -3863,6 +3862,16 @@ button,
   text-align: center;
   outline: solid 1px rgba(2, 102, 193, 0.1);
 }
+.instructors__link:hover, .instructors__link:focus {
+  outline: 1px solid #2d383f;
+}
+.instructors__link:active {
+  outline: none;
+  background-color: #0266c1;
+}
+.instructors__link:active svg {
+  color: #ffffff;
+}
 @media (max-width: 767px) {
   .instructors__link {
     position: absolute;
@@ -3927,6 +3936,8 @@ button,
 }
 
 .learning__list {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3936,8 +3947,6 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 @media (max-width: 1199px) {
   .learning__list {
@@ -4116,7 +4125,7 @@ button,
   background-size: contain;
   bottom: -2px;
   left: -1000%;
-  width: 10000%;
+  width: 1000%;
   height: 1px;
 }
 @media (max-width: 1199px) {
@@ -4132,6 +4141,10 @@ button,
   .learning__decor {
     background: none;
   }
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 .about {
@@ -4392,7 +4405,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__list {
-    left: -82px;
+    left: 0;
   }
 }
 @media (max-width: 767px) {
