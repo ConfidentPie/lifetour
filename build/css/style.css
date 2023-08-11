@@ -2459,14 +2459,13 @@ button,
   .header__nav-toggle {
     display: block;
     position: relative;
-    width: 26px;
-    height: 26px;
+    width: 60px;
+    height: 60px;
     left: -13px;
     cursor: pointer;
     border: none;
     background-color: transparent;
-    min-width: 60px;
-    min-height: 60px;
+    z-index: 5;
   }
   .header__nav-toggle::before {
     content: "";
@@ -2491,9 +2490,12 @@ button,
 }
 @media (max-width: 767px) {
   .header__nav-toggle {
+    width: 60px;
+    height: 60px;
     top: -6px;
     grid-area: button;
     align-self: flex-start;
+    z-index: 5;
   }
 }
 @media (max-width: 767px){
@@ -2522,10 +2524,10 @@ button,
   position: absolute;
   top: 29px;
   left: 20px;
-  width: 20px;
-  height: 2px;
+  width: 60px;
+  height: 60px;
   background-color: #ffffff;
-  z-index: 3;
+  z-index: 5;
 }
 .header__nav--opened ~ .header__nav-toggle::before {
   background-color: #000000;
