@@ -3466,7 +3466,7 @@ body.overlay::before {
 .tours__item h3 {
   position: relative;
   margin: 0 0 38px;
-  padding: 0 60px 0 0;
+  padding: 0 70px 0 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -4430,11 +4430,6 @@ body.overlay::before {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 1199px) {
-  .reviews__list {
-    left: -82px;
-  }
-}
 @media (max-width: 767px) {
   .reviews__list {
     left: 0;
@@ -5023,6 +5018,13 @@ body.overlay::before {
 .gallery__item--small {
   max-width: 298px;
   height: auto;
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .gallery__item--small {
+    width: 172px;
+    height: auto;
+  }
 }
 
 .gallery__item-container {
